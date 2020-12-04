@@ -33,6 +33,23 @@ class Home extends BaseController
 	{
 		return view('template/Sign_up.html');
 	}
-	
+		
+	// http://localhost/php2killifish/php2killifish/public/home/community
+	public function community()
+	{
+		return view('template/Community.html');
+	}
+
+	// http://localhost/php2killifish/php2killifish/public/home/updatePage
+	public function updatePage()
+	{
+		return view('template/Update_page.html');
+	}
+
+	// http://localhost/php2killifish/php2killifish/public/home/updateShow
+	public function updateShow()
+	{
+		return view('template/Update_show.html');
+	}
 
 }
