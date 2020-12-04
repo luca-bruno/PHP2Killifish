@@ -104,3 +104,12 @@ CRITICAL - 2020-12-04 05:30:52 --> Cannot redeclare App\Controllers\Home::about(
 CRITICAL - 2020-12-04 05:31:03 --> Cannot redeclare App\Controllers\Home::about()
 #0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
 #1 {main}
+CRITICAL - 2020-12-04 08:47:03 --> Invalid file: template/Login.php
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/Login....')
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('template/Login', Array, true)
+#2 C:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\Home.php(28): view('template/Login')
+#3 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\Home->login()
+#4 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}

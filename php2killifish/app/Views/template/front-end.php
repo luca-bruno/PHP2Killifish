@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/template/css/base.css">
 
     <title>KilliFish Game</title>
 </head>
@@ -17,7 +17,9 @@
             <div class="collapse navbar-collapse" id="website-navbar">
                 <ul class="navbar-nav m-auto">
                     <li class="nav-item active">
-                        <a href="/" class="nav-link">Home</a>
+                        <a href="/" class="nav-link">
+                            <i class="material-icons material-icons-outlined">home</i>
+                        Home</a>
                     </li>
                     <li class="nav-item active">
                         <a href="#" class="nav-link">Updates</a>

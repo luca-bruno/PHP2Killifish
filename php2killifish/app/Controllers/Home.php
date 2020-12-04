@@ -25,7 +25,13 @@ class Home extends BaseController
 	// http://localhost/php2killifish/php2killifish/public/home/login
 	public function login()
 	{
-		return view('template/Login');
+		return view('template/Login_page.html');
+	}
+
+	// http://localhost/php2killifish/php2killifish/public/home/signUp
+	public function signUp()
+	{
+		return view('template/Sign_up.html');
 	}
 	
 
