@@ -1,0 +1,106 @@
+CRITICAL - 2020-12-04 03:32:01 --> Invalid file: template/home.php
+#0 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/home.p...')
+#1 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\Common.php(1119): CodeIgniter\View\View->render('template/home', Array, true)
+#2 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\app\Controllers\Home.php(7): view('template/home')
+#3 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-04 03:32:11 --> Invalid file: views/template/home.php
+#0 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('views/template/...')
+#1 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\Common.php(1119): CodeIgniter\View\View->render('views/template/...', Array, true)
+#2 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\app\Controllers\Home.php(7): view('views/template/...')
+#3 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-04 03:32:12 --> Invalid file: views/template/home.php
+#0 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('views/template/...')
+#1 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\Common.php(1119): CodeIgniter\View\View->render('views/template/...', Array, true)
+#2 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\app\Controllers\Home.php(7): view('views/template/...')
+#3 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-04 03:32:12 --> Invalid file: views/template/home.php
+#0 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('views/template/...')
+#1 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\Common.php(1119): CodeIgniter\View\View->render('views/template/...', Array, true)
+#2 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\app\Controllers\Home.php(7): view('views/template/...')
+#3 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-04 03:32:21 --> Invalid file: Views/template/home.php
+#0 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Views/template/...')
+#1 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\Common.php(1119): CodeIgniter\View\View->render('Views/template/...', Array, true)
+#2 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\app\Controllers\Home.php(7): view('Views/template/...')
+#3 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-04 03:34:00 --> Invalid file: Views/template/home.php
+#0 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Views/template/...')
+#1 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\Common.php(1119): CodeIgniter\View\View->render('Views/template/...', Array, true)
+#2 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\app\Controllers\Home.php(7): view('Views/template/...')
+#3 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-04 04:48:37 --> Invalid file: template/Login_page.php
+#0 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/Login_...')
+#1 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\Common.php(1119): CodeIgniter\View\View->render('template/Login_...', Array, true)
+#2 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\app\Controllers\Home.php(11): view('template/Login_...')
+#3 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-04 04:48:49 --> Invalid file: template/Login_page.php
+#0 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/Login_...')
+#1 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\Common.php(1119): CodeIgniter\View\View->render('template/Login_...', Array, true)
+#2 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\app\Controllers\Home.php(11): view('template/Login_...')
+#3 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-04 04:48:50 --> Invalid file: template/Login_page.php
+#0 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/Login_...')
+#1 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\Common.php(1119): CodeIgniter\View\View->render('template/Login_...', Array, true)
+#2 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\app\Controllers\Home.php(11): view('template/Login_...')
+#3 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-04 04:48:52 --> Invalid file: template/Login_page.php
+#0 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/Login_...')
+#1 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\Common.php(1119): CodeIgniter\View\View->render('template/Login_...', Array, true)
+#2 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\app\Controllers\Home.php(11): view('template/Login_...')
+#3 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-04 05:05:03 --> syntax error, unexpected '}', expecting ';'
+#0 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\PHP2Killifish\PHP2Killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-04 05:30:52 --> Cannot redeclare App\Controllers\Home::about()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-04 05:31:03 --> Cannot redeclare App\Controllers\Home::about()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
