@@ -2,12 +2,10 @@
 
 class Home extends BaseController
 {
-	//http://localhost/php2killifish/php2killifish/public/
+	// http://localhost/php2killifish/php2killifish/public/
 	public function index()
 	{
 		return view('template/home');
-		
-
 	}
 
 	// http://localhost/php2killifish/php2killifish/public/home/about
@@ -19,37 +17,44 @@ class Home extends BaseController
 	// http://localhost/php2killifish/php2killifish/public/home/postForm
 	public function postForm()
 	{
-		return view('template/Post_form.html');
+		return view('template/postForm');
 	}
 
 	// http://localhost/php2killifish/php2killifish/public/home/login
 	public function login()
 	{
-		return view('template/Login_page.html');
+		return view('template/loginPage');
 	}
 
 	// http://localhost/php2killifish/php2killifish/public/home/signUp
 	public function signUp()
 	{
-		return view('template/Sign_up.html');
+		return view('template/signUp');
 	}
 		
 	// http://localhost/php2killifish/php2killifish/public/home/community
 	public function community()
 	{
-		return view('template/Community.html');
+		return view('template/community');
 	}
 
 	// http://localhost/php2killifish/php2killifish/public/home/updatePage
 	public function updatePage()
 	{
-		return view('template/Update_page.html');
+		return view('template/updatePage');
 	}
 
 	// http://localhost/php2killifish/php2killifish/public/home/updateShow
 	public function updateShow()
 	{
-		return view('template/Update_show.html');
+		return view('template/updateShow');
 	}
+
+	// http://localhost/php2killifish/php2killifish/public/home/viewPost
+	public function viewPost()
+	{
+		return view('template/viewPost');
+	}
+
 
 }

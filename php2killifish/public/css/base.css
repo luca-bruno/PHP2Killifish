@@ -1,0 +1,43 @@
+
+body 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.table
+{
+    align-content: center;
+    box-sizing: content-box;
+    border: 1px solid whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    padding: 5px;
+    background-color: whitesmoke;
+    width: 8rem;
+    
+}
+.underline
+{
+    text-decoration: underline;
+}
+.space
+{
+    display:block;
+    overflow:hidden;
+
+}
+
+.middleButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered 
+{
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
