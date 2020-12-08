@@ -5,55 +5,69 @@ class Home extends BaseController
 	// http://localhost/php2killifish/php2killifish/public/
 	public function index()
 	{
-		return view('template/home');
+		echo view('templates/header');
+		echo view('home');
+		echo view('templates/footer');
 	}
 
-	// http://localhost/php2killifish/php2killifish/public/home/about
+	// http://localhost/php2killifish/php2killifish/public/about
 	public function about()
 	{
-		return view('template/about');
+		echo view('templates/header');
+		echo view('about');
+		echo view('templates/footer');
 	}
 
-	// http://localhost/php2killifish/php2killifish/public/home/postForm
-	public function postForm()
+	// http://localhost/php2killifish/php2killifish/public/postSubmit
+	public function postSubmit()
 	{
-		return view('template/postForm');
+		echo view('templates/header');
+		echo view('postSubmit');
+		echo view('templates/footer');
 	}
 
-	// http://localhost/php2killifish/php2killifish/public/home/login
-	public function login()
-	{
-		return view('template/loginPage');
-	}
+	// // http://localhost/php2killifish/php2killifish/public/home/login
+	// public function login()
+	// {
+	// 	echo view('loginPage');
+	// }
 
-	// http://localhost/php2killifish/php2killifish/public/home/signUp
-	public function signUp()
-	{
-		return view('template/signUp');
-	}
+	// // http://localhost/php2killifish/php2killifish/public/home/signUp
+	// public function signUp()
+	// {
+	// 	return view('signUp');
+	// }
 		
-	// http://localhost/php2killifish/php2killifish/public/home/community
+	// http://localhost/php2killifish/php2killifish/public/community
 	public function community()
 	{
-		return view('template/community');
+		echo view('templates/header');
+		echo view('community');
+		echo view('templates/footer');
 	}
 
-	// http://localhost/php2killifish/php2killifish/public/home/updatePage
-	public function updatePage()
+	// http://localhost/php2killifish/php2killifish/public/updates
+	public function updates()
 	{
-		return view('template/updatePage');
+		echo view('templates/header');
+		echo view('updates');
+		echo view('templates/footer');
 	}
 
-	// http://localhost/php2killifish/php2killifish/public/home/updateShow
-	public function updateShow()
+	// http://localhost/php2killifish/php2killifish/public/updateDisplay
+	public function updateDisplay()
 	{
-		return view('template/updateShow');
+		echo view('templates/header');
+		echo view('updateDisplay');
+		echo view('templates/footer');
 	}
 
-	// http://localhost/php2killifish/php2killifish/public/home/viewPost
-	public function viewPost()
+	// http://localhost/php2killifish/php2killifish/public/postDisplay
+	public function postDisplay()
 	{
-		return view('template/viewPost');
+		echo view('templates/header');
+		echo view('postDisplay');
+		echo view('templates/footer');
 	}
 
 
