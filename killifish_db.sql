@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 03, 2020 at 02:50 PM
+-- Generation Time: Dec 08, 2020 at 11:59 AM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.11
 
@@ -29,20 +29,23 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `users` (
-  `userID` int(10) NOT NULL,
-  `name` varchar(600) NOT NULL,
-  `surname` varchar(600) NOT NULL,
-  `username` varchar(600) NOT NULL,
-  `email` varchar(600) NOT NULL,
-  `password` varchar(600) NOT NULL
+  `userID` int(10) UNSIGNED NOT NULL,
+  `userFirstName` varchar(600) NOT NULL,
+  `userLastName` varchar(600) NOT NULL,
+  `userScreenName` varchar(255) NOT NULL,
+  `userEmail` varchar(600) NOT NULL,
+  `userPassword` varchar(255) NOT NULL,
+  `userCreated_at` int(10) DEFAULT NULL,
+  `userUpdated_at` int(10) UNSIGNED DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`userID`, `name`, `surname`, `username`, `email`, `password`) VALUES
-(1, '', '', '', '', '');
+INSERT INTO `users` (`userID`, `userFirstName`, `userLastName`, `userScreenName`, `userEmail`, `userPassword`, `userCreated_at`, `userUpdated_at`) VALUES
+(2, 'Camden', 'Thomas', 'jicujov', 'peruwyp@mailinator.com', 'Pa$$w0rd!', 0, 0),
+(3, 'Lars', 'Kirby', 'vywecizysi', 'hydycyvede@mailinator.com', 'Pa$$w0rd!', 1607422057, 1607422057);
 
 --
 -- Indexes for dumped tables
@@ -62,7 +65,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `userID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `userID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
