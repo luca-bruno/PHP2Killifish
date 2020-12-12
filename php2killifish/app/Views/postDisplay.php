@@ -8,30 +8,51 @@
 </head>
 <body>
     <div class="container">
-        <div class="table" >
-                <img src="" alt="post1" >
-                <h3 > Post1</h3>
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p> 
-                    <i class="material-icons">account_circle</i> User1:lorem ipsum  
-                </p>
-                <button type="submit" > <i  class="material-icons space">thumb_up</i></button>
-                <button type="submit" > <i  class="material-icons space">thumb_down</i></button>
-        </div>
-        <div class="table" >
-                <p> 
-                    <i class="material-icons">account_circle</i>
-                    <label for="description"></label>
-                    <textarea name="description" id="description" cols="40" rows="3" ></textarea>
-                    <button type="submit" > <i  class="material-icons space">arrow_forward</i></button>
-                </p>
-        </div>
-        <div class="table" >
-                <p> 
-                    <i class="material-icons">account_circle</i> User2:lorem ipsum lorem ipsum 
-                </p>
-                <button type="submit" > <i  class="material-icons space">thumb_up</i></button>
-                <button type="submit" > <i  class="material-icons space">thumb_down</i></button>
+        <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 mt-5 pt-3 pb-3">
+            <div class="boxBorder" >
+                <a href="community">Back</a>
+                <br>
+                <img class="imageCenter" alt="Post1" src="https://i.pravatar.cc/150?img=50">
+                    <h3 > Post1</h3>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <hr>
+                    <div class="row">
+                        <div class="col-12 col-sm-4">
+                            <i class="material-icons">face</i> User1
+                        </div>
+                        <div class="col-12 col-sm-8 text-right">
+                            <button type="submit" > <i  class="material-icons space">thumb_up</i></button>
+                            <button type="submit" > <i  class="material-icons space">thumb_down</i></button>
+                        </div>
+                    </div>
+            </div>
+            <div class="boxBorder" >
+                <div class="row">
+                    <form class="w-100" action="/" method="post">
+                        <div class="col-12">
+                            <i class="material-icons">face</i> User_logedIn
+                            <div class="form-group">
+                                <label for="comment"></label>
+                                <textarea type="text" class="form-control" name="comment" id="comment" placeholder="Comment"></textarea>
+                            </div>
+                            <div class="col-12 text-right">
+                                <button type="submit"> <i  class="material-icons space">arrow_forward</i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <hr>
+                <div class="row">
+                        <div class="col-12 col-sm-8">
+                            <i class="material-icons">face</i> User2:
+                            <p>Some text that describes me lorem ipsum ipsum lorem.Some text that describes me lorem ipsum ipsum lorem.</p>
+                        </div>
+                        <div class="col-12 col-sm-4 text-right">
+                            <button type="submit" > <i  class="material-icons space">thumb_up</i></button>
+                            <button type="submit" > <i  class="material-icons space">thumb_down</i></button>
+                        </div>
+                    </div>
+            </div>
         </div>
     </div>    
 </body>

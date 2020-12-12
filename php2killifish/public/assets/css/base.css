@@ -4,33 +4,59 @@ body
     margin: 0;
 }
 
-.table
+/* box border for drop shadow and outline*/
+.boxBorder
 {
-    align-content: center;
-    box-sizing: content-box;
-    border: 1px solid whitesmoke;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 8px;
-    padding: 5px;
+    border: 1px solid rgb(165, 165, 165);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.455);
     background-color: whitesmoke;
-    width: 8rem;
+    padding: 10px;
+    
     
 }
-.underline
-{
-    text-decoration: underline;
-}
+/* spacing bettween the icons */
 .space
 {
     display:block;
     overflow:hidden;
-
 }
-
-.middleButton {
+/* used for the create post button in the community page */
+.middleButton 
+{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.material-icons
+{ 
+    /* probably not specific enough if we use material icons elsewhere from nav bar */
+    float: left;
+    padding-right: 5px;
+}
+
+/* images stays on the right*/
+.imageRight
+{
+    float: right;
+    margin: 5px;
+    display: block;
+    width: 180px;
+}
+
+/* images stays on the middle*/
+.imageCenter
+{
+    margin: 5px;
+    display: block;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* images does not go outside the boder*/
+.clearfix 
+{
+    overflow: auto;
 }
 
 /* .centered 
@@ -40,9 +66,3 @@ body
     left: 50%;
     transform: translate(-50%, -50%);
 } */
-
-.material-icons { 
-    /* probably not specific enough if we use material icons elsewhere from nav bar */
-    float: left;
-    padding-right: 5px;
-}

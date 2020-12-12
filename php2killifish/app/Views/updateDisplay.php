@@ -11,17 +11,18 @@
 
 <body>
     <div class="container">
-    <div>
-        <div class="table">
-            <button type="submit" > <i  class="material-icons space">arrow_backwards</i></button>
-            <br>
-            <img src="" alt="news1">
-            <h2 class="text-center"> Latest Update</h2>
-            <p class="text-center">Some text that describes me lorem ipsum ipsum lorem.
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis at quis, consequuntur recusandae dicta ipsa maxime perspiciatis, 
-                                    error ut voluptas, aliquam eius. Reiciendis inventore eligendi numquam dolorum reprehenderit sunt eos!
-            </p>
+        <div class="mt-5 pt-1 pb-5">
+            <div class="boxBorder">
+                <a href="updates">Back</a>
+                <br>
+                <img class="imageCenter" alt="Latest Update" src="https://i.pravatar.cc/150?img=50">
+                <h2 class="text-center"> Latest Update</h2>
+                <hr>
+                <p class="text-center">Some text that describes me lorem ipsum ipsum lorem.
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis at quis, consequuntur recusandae dicta ipsa maxime perspiciatis, 
+                                        error ut voluptas, aliquam eius. Reiciendis inventore eligendi numquam dolorum reprehenderit sunt eos!
+                </p>
+            </div>
         </div>
-    </div>
     </div>
 </body>

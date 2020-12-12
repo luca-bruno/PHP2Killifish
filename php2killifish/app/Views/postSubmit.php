@@ -10,27 +10,36 @@
 </head>
 
 <body>
-    <div class="container">
-        <div>
-            <h2 class="text-center">Community</h2>
-        </div>
-        <div>
-            <h3 class="text-center">Post Form</h3>
-        </div>
-    
-        <div class="table" >
-            <form  action="/action_page.php" method="get">
-                <label class="center"for="title"></label>
-                <input type="text" placeholder="Title" name="title" required>
-                <br>
-                <label for="description"></label>
-                <textarea name="description" id="description" cols="50" rows="10" ></textarea>
-                <br>
-                <label for="media"></label>
-                <input type="file" placeholder="Enter Media" name="media" required>
-                <br>
-                <button type="submit">Create Post</button>
-            </form>
+    <div class="container mt-3">
+        <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 pt-3 pb-3">
+            
+            <div class="row mb-3 boxBorder">
+                <a href="community">Back</a>
+                <br> 
+                <div class="container">
+                    <h2 class="text-center">Community</h2>
+                    <h3 class="text-center">Post Form</h3>
+                    <hr>
+                </div>
+                <form class="w-100" action="/" method="post">
+                    <div class="form-group">
+                        <label class="center"for="title"></label>
+                        <input type="text" class="form-control" placeholder="Title" name="title" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description"></label>
+                        <textarea type="text" class="form-control" name="description" id="description" placeholder="Desription"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="media"></label>
+                        <input type="file" class="form-control-file" placeholder="Enter Media" name="media" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mt-3">Create Post</button>
+                </form>
+            </div>
         </div>
     </div>
 </body<
