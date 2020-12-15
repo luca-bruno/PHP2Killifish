@@ -10,9 +10,48 @@ class UserController extends BaseController{
         $data = [];
         helper(['form']);
 
+        if ($this->request->getMethod() == 'post'){ //validation rules for login
+            $rules = [
+                'userScreenName'            => 'required|min_length[3]|max_length[255]',
+                'userPassword'              => 'required|min_length[8]|max_length[255]|validateUser[userScreenName,userPassword]',
+            ];
+
+            $errors = [
+                'userPassword' => [
+                    'validateUser' => 'Username or password don\'t match'
+                ]
+            ];
+
+            if (! $this->validate($rules, $errors)){ //if form is not valid
+                $data['validation'] = $this->validator; 
+                //validate() method only returns true if form passes with no rules failed
+            } else { //if validation successful
+                $model = new UserModel(); //create instance of UserModel
+                
+                $user = $model->where('userScreenName', $this->request->getVar('userScreenName')) //search db for matching username to input
+                            ->first(); //calls first item in list search
+                
+                $this->setUserSession($user); //assigns user to session
+                return redirect()->to('home'); //redirect user to home page after successful login
+            }
+        }
+        
         echo view('templates/header', $data); //any difference to return view? or $this->load
         echo view('login');
         echo view('templates/footer');
+    }
+
+    private function setUserSession($user){ //set logged in user's details to session
+        $data = [
+            'userID' => $user['userID'],
+            'userFirstName' => $user['userFirstName'],
+            'userLastName' => $user['userLastName'],
+            'userScreenName' => $user['userScreenName'],
+            'isLoggedIn' => true,
+        ];
+
+        session()->set($data);
+        return true;
     }
 
     // http://localhost/php2killifish/php2killifish/public/register
@@ -20,7 +59,7 @@ class UserController extends BaseController{
         $data = [];
         helper(['form']);
 
-        if ($this->request->getMethod() == 'post'){ //validation rules
+        if ($this->request->getMethod() == 'post'){ //built-in CI4 validation rules for registration
             $rules = [
                 'userFirstName'             => 'required|min_length[3]|max_length[255]',
                 'userLastName'              => 'required|min_length[3]|max_length[255]',
@@ -35,7 +74,6 @@ class UserController extends BaseController{
             if (! $this->validate($rules)){ //if form is not valid
                 $data['validation'] = $this->validator; 
                 //validate() method only returns true if form passes with no rules failed
-                //validation used in array $data
             } else { //if validation successful
                 $model = new UserModel(); //create instance of UserModel
 
@@ -49,7 +87,7 @@ class UserController extends BaseController{
                 $model->save($newData); //save it
                 $session = session(); //create session
                 $session->setFlashdata('success', 'Successful Registration'); //displays success dialog as flashdata (session data that will only be available for the next request)
-                return redirect()->to('login'); //return user to home page TEMPORARY ##########################################################
+                return redirect()->to('login'); //return user to login page
             }
         }
     
