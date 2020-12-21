@@ -38,8 +38,8 @@ $routes->get('/updateDisplay', 'Home::updateDisplay');
 $routes->get('/postDisplay', 'Home::postDisplay');
 $routes->get('/postSubmit', 'Home::postSubmit');
 
-
-$routes->get('/login', 'UserController::index');
+$routes->match(['get', 'post'], '/login', 'UserController::index');
+// $routes->get('/login', 'UserController::index');
 $routes->match(['get', 'post',], '/register', 'UserController::register');
 
 /**

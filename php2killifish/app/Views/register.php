@@ -9,7 +9,8 @@
                         <div class="col-12 col-sm-6">
                             <div class="form-group">
                                 <label for="userFirstName">First Name</label>
-                                <input type="text" class="form-control" name="userFirstName" id="userFirstName" value="<?= set_value('userFirstName') ?>">
+                                <input type="text" class="form-control" name="userFirstName" id="userFirstName" value="<?= set_value('userFirstName') ?>"> 
+                                <!-- set_value() to retain inputted data in case of failed register validation -->
                             </div>
                         </div>
                         <div class="col-12 col-sm-6">
@@ -48,6 +49,7 @@
                                 <input type="password" class="form-control" name="userPassword_confirm" id="userPassword_confirm" value="">
                             </div>
                         </div>
+                        <!-- if validation fails, CI method listErrors() echoes validation faults  -->
                         <?php if (isset($validation)): ?>
                             <div class="col-12">
                                 <div class="alert alert-danger" >

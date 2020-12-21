@@ -66,3 +66,29 @@ body
     left: 50%;
     transform: translate(-50%, -50%);
 } */
+
+.material-icons { 
+    /* probably not specific enough if we use material icons elsewhere from nav bar */
+    float: left;
+    padding-right: 5px;
+}
+
+/* Error dialogs */
+.form-wrapper{
+    border-radius: 7px;
+}
+
+.form-wrapper label{
+    font-weight: bold;
+}
+
+.errors li{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+}
+
+.errors ul{
+    padding-left: 0;
+    margin-bottom: 0;
+}
