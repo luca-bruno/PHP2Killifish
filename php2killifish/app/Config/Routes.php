@@ -34,6 +34,7 @@ $routes->get('/', 'Home::index');
 $routes->get('/about', 'Home::about');
 $routes->get('/community', 'Home::community');
 $routes->get('/updates', 'Home::updates');
+// $routes->get('/updateSubmit', 'Home::updateSubmit');
 $routes->get('/updateDisplay', 'Home::updateDisplay');
 $routes->get('/postDisplay', 'Home::postDisplay');
 $routes->get('/postSubmit', 'Home::postSubmit');
@@ -42,6 +43,8 @@ $routes->match(['get', 'post'], '/login', 'UserController::index');
 // $routes->get('/login', 'UserController::index');
 $routes->match(['get', 'post',], '/register', 'UserController::register');
 
+
+$routes->match(['get', 'post',], '/updateSubmit', 'UpdateController::submit');
 /**
  * --------------------------------------------------------------------
  * Additional Routing

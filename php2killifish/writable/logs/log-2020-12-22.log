@@ -1,0 +1,520 @@
+CRITICAL - 2020-12-22 08:29:57 --> Class 'App\Contrrollers\BaseController' not found
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(365): require_once()
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 [internal function]: spl_autoload_call('App\\Controllers...')
+#5 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#6 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#7 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-22 08:30:43 --> Class 'App\Contrrollers\BaseController' not found
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(365): require_once()
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 [internal function]: spl_autoload_call('App\\Controllers...')
+#5 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#6 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#7 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-22 08:31:14 --> Class 'App\Contrrollers\BaseController' not found
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(365): require_once()
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 [internal function]: spl_autoload_call('App\\Controllers...')
+#5 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#6 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#7 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-22 08:31:20 --> Class 'App\Contrrollers\BaseController' not found
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(365): require_once()
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 [internal function]: spl_autoload_call('App\\Controllers...')
+#5 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#6 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#7 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-22 08:31:37 --> Class 'App\Contrrollers\BaseController' not found
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(365): require_once()
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 [internal function]: spl_autoload_call('App\\Controllers...')
+#5 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#6 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#7 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-22 08:31:49 --> Class 'App\Contrrollers\BaseController' not found
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(365): require_once()
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 [internal function]: spl_autoload_call('App\\Controllers...')
+#5 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#6 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#7 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-22 08:31:50 --> Class 'App\Contrrollers\BaseController' not found
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(365): require_once()
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 [internal function]: spl_autoload_call('App\\Controllers...')
+#5 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#6 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#7 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-22 08:31:54 --> Class 'App\Contrrollers\BaseController' not found
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(365): require_once()
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 [internal function]: spl_autoload_call('App\\Controllers...')
+#5 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#6 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#7 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-22 08:32:01 --> Class 'App\Contrrollers\BaseController' not found
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(365): require_once()
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 [internal function]: spl_autoload_call('App\\Controllers...')
+#5 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#6 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#7 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-22 08:32:05 --> Class 'App\Contrrollers\BaseController' not found
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(365): require_once()
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 [internal function]: spl_autoload_call('App\\Controllers...')
+#5 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#6 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#7 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-22 08:43:48 --> Call to undefined function set_value()
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updateSubmit', Array, true)
+#2 C:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\Home.php(49): view('updateSubmit')
+#3 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\Home->updateSubmit()
+#4 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-22 08:43:50 --> Call to undefined function set_value()
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updateSubmit', Array, true)
+#2 C:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\Home.php(49): view('updateSubmit')
+#3 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\Home->updateSubmit()
+#4 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-22 08:48:20 --> Call to undefined function set_value()
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updateSubmit', Array, true)
+#2 C:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\Home.php(49): view('updateSubmit')
+#3 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\Home->updateSubmit()
+#4 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-22 08:48:23 --> Call to undefined function set_value()
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updateSubmit', Array, true)
+#2 C:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\Home.php(49): view('updateSubmit')
+#3 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\Home->updateSubmit()
+#4 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-22 08:48:34 --> Call to undefined function set_value()
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updateSubmit', Array, true)
+#2 C:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\Home.php(49): view('updateSubmit')
+#3 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\Home->updateSubmit()
+#4 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-22 08:49:12 --> Call to undefined function set_value()
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updateSubmit', Array, true)
+#2 C:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\Home.php(49): view('updateSubmit')
+#3 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\Home->updateSubmit()
+#4 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-22 08:49:18 --> Call to undefined function set_value()
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updateSubmit', Array, true)
+#2 C:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\Home.php(49): view('updateSubmit')
+#3 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\Home->updateSubmit()
+#4 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-22 08:49:26 --> Call to undefined function set_value()
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updateSubmit', Array, true)
+#2 C:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\Home.php(49): view('updateSubmit')
+#3 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\Home->updateSubmit()
+#4 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-22 08:49:29 --> Call to undefined function set_value()
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updateSubmit', Array, true)
+#2 C:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\Home.php(49): view('updateSubmit')
+#3 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\Home->updateSubmit()
+#4 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-22 08:53:55 --> Class 'App\Contolelers\BaseController' not found
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(365): require_once()
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 [internal function]: spl_autoload_call('App\\Controllers...')
+#5 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#6 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#7 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-22 08:54:29 --> Class 'App\Contolelers\BaseController' not found
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(365): require_once()
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 [internal function]: spl_autoload_call('App\\Controllers...')
+#5 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#6 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#7 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-22 08:55:03 --> Class 'App\Controllers\NewsModel' not found
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->submit()
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-22 08:55:37 --> Class 'App\Controllers\UpdateModel' not found
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->submit()
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-22 08:55:52 --> Class 'App\Controllers\UpdateModel' not found
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->submit()
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-22 08:56:34 --> Class 'App\Controllers\UpdateModel' not found
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->submit()
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-22 08:57:31 --> Class 'App\Controllers\UpdateModel' not found
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->submit()
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-22 08:57:50 --> Class 'App\Models\UpdateModel' not found
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->submit()
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-22 08:58:08 --> Class 'App\Models\UpdateModel' not found
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->submit()
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-22 08:58:28 --> Class 'App\Models\UpdateModel' not found
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->submit()
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-22 08:58:44 --> Class 'App\Models\UpdateModel' not found
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->submit()
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-22 08:58:54 --> Class 'App\Models\UpdateModel' not found
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->submit()
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-22 09:06:16 --> Undefined variable: model
+#0 C:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\UpdateController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 32, Array)
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->submit()
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#3 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-22 09:06:37 --> Class 'App\Models\UpdateModel' not found
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->submit()
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-22 09:06:42 --> Class 'App\Models\UpdateModel' not found
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->submit()
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-22 09:07:41 --> Class 'App\Models\UpdateModel' not found
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->submit()
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-22 09:07:45 --> Class 'App\Models\UpdateModel' not found
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->submit()
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-22 09:08:39 --> Unknown column 'created_at' in 'field list'
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `ne...')
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ne...')
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ne...')
+#3 C:\xampp\htdocs\php2killifish\php2killifish\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ne...', Array, false)
+#4 C:\xampp\htdocs\php2killifish\php2killifish\system\Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\php2killifish\php2killifish\system\Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 C:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\UpdateController.php(32): CodeIgniter\Model->save(Array)
+#7 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->submit()
+#8 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#9 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-12-22 09:08:48 --> Unknown column 'created_at' in 'field list'
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `ne...')
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ne...')
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ne...')
+#3 C:\xampp\htdocs\php2killifish\php2killifish\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ne...', Array, false)
+#4 C:\xampp\htdocs\php2killifish\php2killifish\system\Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\php2killifish\php2killifish\system\Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 C:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\UpdateController.php(32): CodeIgniter\Model->save(Array)
+#7 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->submit()
+#8 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#9 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-12-22 09:13:55 --> Unknown column 'userScreenName' in 'where clause'
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT 1\nFROM `...')
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\php2killifish\php2killifish\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\php2killifish\php2killifish\system\Validation\Rules.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\php2killifish\php2killifish\system\Validation\Validation.php(325): CodeIgniter\Validation\Rules->is_unique('sardsa', 'userScreenName', Array, NULL)
+#6 C:\xampp\htdocs\php2killifish\php2killifish\system\Validation\Validation.php(189): CodeIgniter\Validation\Validation->processRules('userScreenName', 'userScreenName', 'sardsa', Array, Array)
+#7 C:\xampp\htdocs\php2killifish\php2killifish\system\Controller.php(219): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\UserController.php(74): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UserController->register()
+#10 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#11 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2020-12-22 09:28:04 --> Unknown column 'updated_at' in 'field list'
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `ne...')
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ne...')
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ne...')
+#3 C:\xampp\htdocs\php2killifish\php2killifish\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ne...', Array, false)
+#4 C:\xampp\htdocs\php2killifish\php2killifish\system\Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\php2killifish\php2killifish\system\Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 C:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\UpdateController.php(32): CodeIgniter\Model->save(Array)
+#7 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->submit()
+#8 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#9 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-12-22 09:29:16 --> Unknown column 'userUpdated_at' in 'field list'
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `ne...')
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ne...')
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ne...')
+#3 C:\xampp\htdocs\php2killifish\php2killifish\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ne...', Array, false)
+#4 C:\xampp\htdocs\php2killifish\php2killifish\system\Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\php2killifish\php2killifish\system\Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 C:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\UpdateController.php(32): CodeIgniter\Model->save(Array)
+#7 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->submit()
+#8 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#9 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-12-22 09:29:25 --> Unknown column 'userUpdated_at' in 'field list'
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `ne...')
+#1 C:\xampp\htdocs\php2killifish\php2killifish\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ne...')
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ne...')
+#3 C:\xampp\htdocs\php2killifish\php2killifish\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ne...', Array, false)
+#4 C:\xampp\htdocs\php2killifish\php2killifish\system\Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\php2killifish\php2killifish\system\Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 C:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\UpdateController.php(32): CodeIgniter\Model->save(Array)
+#7 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->submit()
+#8 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#9 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-12-22 09:55:35 --> syntax error, unexpected '=', expecting ';' or ','
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updateSubmit', Array, true)
+#1 C:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\UpdateController.php(40): view('updateSubmit')
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->submit()
+#3 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#4 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-22 09:55:39 --> syntax error, unexpected '=', expecting ';' or ','
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updateSubmit', Array, true)
+#1 C:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\UpdateController.php(40): view('updateSubmit')
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->submit()
+#3 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#4 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-22 09:55:53 --> syntax error, unexpected '=', expecting ';' or ','
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updateSubmit', Array, true)
+#1 C:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\UpdateController.php(40): view('updateSubmit')
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->submit()
+#3 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#4 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-22 10:11:04 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updates', Array, true)
+#1 C:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\Home.php(41): view('updates')
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\Home->updates()
+#3 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-22 10:11:06 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updates', Array, true)
+#1 C:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\Home.php(41): view('updates')
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\Home->updates()
+#3 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-22 10:11:20 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updates', Array, true)
+#1 C:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\Home.php(41): view('updates')
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\Home->updates()
+#3 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-22 10:11:25 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updates', Array, true)
+#1 C:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\Home.php(41): view('updates')
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\Home->updates()
+#3 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-22 10:11:33 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updates', Array, true)
+#1 C:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\Home.php(41): view('updates')
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\Home->updates()
+#3 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-22 10:13:01 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updates', Array, true)
+#1 C:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\Home.php(41): view('updates')
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\Home->updates()
+#3 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-22 10:13:32 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updates', Array, true)
+#1 C:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\Home.php(41): view('updates')
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\Home->updates()
+#3 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-22 10:13:34 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updates', Array, true)
+#1 C:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\Home.php(41): view('updates')
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\Home->updates()
+#3 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-22 10:13:42 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updates', Array, true)
+#1 C:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\Home.php(41): view('updates')
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\Home->updates()
+#3 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-22 10:14:09 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updates', Array, true)
+#1 C:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\Home.php(41): view('updates')
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\Home->updates()
+#3 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-22 10:16:41 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updates', Array, true)
+#1 C:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\Home.php(41): view('updates')
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\Home->updates()
+#3 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-22 10:16:48 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updates', Array, true)
+#1 C:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\Home.php(41): view('updates')
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\Home->updates()
+#3 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-22 10:17:00 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updates', Array, true)
+#1 C:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\Home.php(41): view('updates')
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\Home->updates()
+#3 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-22 10:17:47 --> syntax error, unexpected ':', expecting ';'
+#0 C:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updates', Array, true)
+#1 C:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\Home.php(41): view('updates')
+#2 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\Home->updates()
+#3 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}

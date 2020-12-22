@@ -42,6 +42,14 @@ class Home extends BaseController
 		echo view('templates/footer');
 	}
 
+	// http://localhost/php2killifish/php2killifish/public/updateSubmit
+	// public function updateSubmit()
+	// {
+	// 	echo view('templates/header');
+	// 	echo view('updateSubmit');
+	// 	echo view('templates/footer');
+	// }
+
 	// http://localhost/php2killifish/php2killifish/public/updateDisplay
 	public function updateDisplay()
 	{
