@@ -1,0 +1,256 @@
+CRITICAL - 2021-01-09 06:37:40 --> Undefined property: App\Controllers\UserController::$session
+#0 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\UserController.php(102): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'E:\\xampp\\htdocs...', 102, Array)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UserController->logout()
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-09 06:38:28 --> Undefined property: App\Controllers\UserController::$session
+#0 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\UserController.php(102): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'E:\\xampp\\htdocs...', 102, Array)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UserController->logout()
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-09 06:38:31 --> Undefined property: App\Controllers\UserController::$session
+#0 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\UserController.php(102): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'E:\\xampp\\htdocs...', 102, Array)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UserController->logout()
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-09 06:38:50 --> Call to undefined method App\Controllers\UserController::session_destroy()
+#0 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UserController->logout()
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-09 06:39:03 --> Undefined property: App\Controllers\UserController::$session
+#0 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\UserController.php(102): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'E:\\xampp\\htdocs...', 102, Array)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UserController->logout()
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-09 08:00:16 --> syntax error, unexpected '?>', expecting '('
+#0 E:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updateSubmit', Array, true)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\UpdateController.php(40): view('updateSubmit')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->submit()
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#4 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-09 08:00:28 --> syntax error, unexpected '?>', expecting ':'
+#0 E:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updateSubmit', Array, true)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\UpdateController.php(40): view('updateSubmit')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->submit()
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#4 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-09 08:00:30 --> syntax error, unexpected '?>', expecting ':'
+#0 E:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updateSubmit', Array, true)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\UpdateController.php(40): view('updateSubmit')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->submit()
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#4 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-09 08:00:55 --> syntax error, unexpected '?>', expecting ':'
+#0 E:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updateSubmit', Array, true)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\UpdateController.php(40): view('updateSubmit')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->submit()
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#4 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-09 08:02:11 --> syntax error, unexpected '?>', expecting ':'
+#0 E:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updateSubmit', Array, true)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\UpdateController.php(40): view('updateSubmit')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->submit()
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#4 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-09 08:02:37 --> syntax error, unexpected '?>', expecting ':'
+#0 E:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updateSubmit', Array, true)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\UpdateController.php(40): view('updateSubmit')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->submit()
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#4 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-09 08:18:36 --> Call to undefined function set_value()
+#0 E:\xampp\htdocs\php2killifish\php2killifish\system\View\View.php(246): include()
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('postSubmit', Array, true)
+#2 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\Home.php(25): view('postSubmit')
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\Home->postSubmit()
+#4 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-09 08:19:51 --> Call to undefined function set_value()
+#0 E:\xampp\htdocs\php2killifish\php2killifish\system\View\View.php(246): include()
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('postSubmit', Array, true)
+#2 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\Home.php(25): view('postSubmit')
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\Home->postSubmit()
+#4 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-09 08:20:06 --> Call to undefined function set_value()
+#0 E:\xampp\htdocs\php2killifish\php2killifish\system\View\View.php(246): include()
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('postSubmit', Array, true)
+#2 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\Home.php(25): view('postSubmit')
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\Home->postSubmit()
+#4 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-09 08:58:31 --> Call to undefined function set_value()
+#0 E:\xampp\htdocs\php2killifish\php2killifish\system\View\View.php(246): include()
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('postSubmit', Array, true)
+#2 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\Home.php(25): view('postSubmit')
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\Home->postSubmit()
+#4 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-09 09:00:20 --> Call to undefined function set_value()
+#0 E:\xampp\htdocs\php2killifish\php2killifish\system\View\View.php(246): include()
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('postSubmit', Array, true)
+#2 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\Home.php(25): view('postSubmit')
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\Home->postSubmit()
+#4 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-09 09:01:09 --> Call to undefined function set_value()
+#0 E:\xampp\htdocs\php2killifish\php2killifish\system\View\View.php(246): include()
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('postSubmit', Array, true)
+#2 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\Home.php(25): view('postSubmit')
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\Home->postSubmit()
+#4 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-09 09:09:59 --> Call to undefined function set_value()
+#0 E:\xampp\htdocs\php2killifish\php2killifish\system\View\View.php(246): include()
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('postSubmit', Array, true)
+#2 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\Home.php(25): view('postSubmit')
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\Home->postSubmit()
+#4 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-09 10:26:00 --> syntax error, unexpected end of file
+#0 E:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updates', Array, true)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\Home.php(41): view('updates')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\Home->updates()
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-09 10:26:15 --> syntax error, unexpected end of file
+#0 E:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updates', Array, true)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\Home.php(41): view('updates')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\Home->updates()
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-09 10:26:49 --> syntax error, unexpected end of file
+#0 E:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updates', Array, true)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\Home.php(41): view('updates')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\Home->updates()
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-09 11:12:09 --> Undefined variable: news_item
+#0 E:\xampp\htdocs\php2killifish\php2killifish\app\Views\updateDisplay.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\xampp\\htdocs...', 9, Array)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\View\View.php(246): include('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updateDisplay', Array, true)
+#3 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\UpdateController.php(34): view('updateDisplay', Array)
+#4 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->view()
+#5 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#6 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-09 11:12:10 --> Undefined variable: news_item
+#0 E:\xampp\htdocs\php2killifish\php2killifish\app\Views\updateDisplay.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\xampp\\htdocs...', 9, Array)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\View\View.php(246): include('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('updateDisplay', Array, true)
+#3 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\UpdateController.php(34): view('updateDisplay', Array)
+#4 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->view()
+#5 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#6 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-09 11:50:09 --> Argument 1 passed to url_title() must be of the type string, null given, called in E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\UpdateController.php on line 59
+#0 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\UpdateController.php(59): url_title(NULL)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->submit()
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-09 11:50:29 --> Argument 1 passed to url_title() must be of the type string, null given, called in E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\UpdateController.php on line 59
+#0 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\UpdateController.php(59): url_title(NULL)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->submit()
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-09 12:53:57 --> Undefined index: title
+#0 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\UpdateController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'E:\\xampp\\htdocs...', 32, Array)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->view('')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-09 12:54:10 --> Undefined index: title
+#0 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\UpdateController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'E:\\xampp\\htdocs...', 32, Array)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->view('')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-09 14:10:45 --> Cannot add or update a child row: a foreign key constraint fails (`killifish_db`.`news`, CONSTRAINT `news_ibfk_1` FOREIGN KEY (`authorID`) REFERENCES `users` (`userID`))
+#0 E:\xampp\htdocs\php2killifish\php2killifish\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `ne...')
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ne...')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ne...')
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ne...', Array, false)
+#4 E:\xampp\htdocs\php2killifish\php2killifish\system\Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\xampp\htdocs\php2killifish\php2killifish\system\Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\UpdateController.php(63): CodeIgniter\Model->save(Array)
+#7 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->submit()
+#8 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#9 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-01-09 14:10:50 --> Cannot add or update a child row: a foreign key constraint fails (`killifish_db`.`news`, CONSTRAINT `news_ibfk_1` FOREIGN KEY (`authorID`) REFERENCES `users` (`userID`))
+#0 E:\xampp\htdocs\php2killifish\php2killifish\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `ne...')
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ne...')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ne...')
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ne...', Array, false)
+#4 E:\xampp\htdocs\php2killifish\php2killifish\system\Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\xampp\htdocs\php2killifish\php2killifish\system\Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\UpdateController.php(63): CodeIgniter\Model->save(Array)
+#7 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->submit()
+#8 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#9 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-01-09 14:12:00 --> Cannot add or update a child row: a foreign key constraint fails (`killifish_db`.`news`, CONSTRAINT `news_ibfk_1` FOREIGN KEY (`authorID`) REFERENCES `users` (`userID`))
+#0 E:\xampp\htdocs\php2killifish\php2killifish\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `ne...')
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ne...')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ne...')
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ne...', Array, false)
+#4 E:\xampp\htdocs\php2killifish\php2killifish\system\Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\xampp\htdocs\php2killifish\php2killifish\system\Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\UpdateController.php(63): CodeIgniter\Model->save(Array)
+#7 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\UpdateController->submit()
+#8 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UpdateController))
+#9 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}

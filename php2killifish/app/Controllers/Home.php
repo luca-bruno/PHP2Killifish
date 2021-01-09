@@ -18,13 +18,13 @@ class Home extends BaseController
 		echo view('templates/footer');
 	}
 
-	// http://localhost/php2killifish/php2killifish/public/postSubmit
-	public function postSubmit()
-	{
-		echo view('templates/header');
-		echo view('postSubmit');
-		echo view('templates/footer');
-	}
+	// // http://localhost/php2killifish/php2killifish/public/postSubmit
+	// public function postSubmit()
+	// {
+	// 	echo view('templates/header');
+	// 	echo view('postSubmit');
+	// 	echo view('templates/footer');
+	// }
 
 	// http://localhost/php2killifish/php2killifish/public/community
 	public function community()
@@ -50,13 +50,13 @@ class Home extends BaseController
 	// 	echo view('templates/footer');
 	// }
 
-	// http://localhost/php2killifish/php2killifish/public/updateDisplay
-	public function updateDisplay()
-	{
-		echo view('templates/header');
-		echo view('updateDisplay');
-		echo view('templates/footer');
-	}
+	// // http://localhost/php2killifish/php2killifish/public/updateDisplay
+	// public function updateDisplay()
+	// {
+	// 	echo view('templates/header');
+	// 	echo view('updateDisplay');
+	// 	echo view('templates/footer');
+	// }
 
 	// http://localhost/php2killifish/php2killifish/public/postDisplay
 	public function postDisplay()

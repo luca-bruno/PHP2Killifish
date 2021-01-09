@@ -32,19 +32,21 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('/about', 'Home::about');
+$routes->get('/updates', 'UpdateController::index');
 $routes->get('/community', 'Home::community');
-$routes->get('/updates', 'Home::updates');
-// $routes->get('/updateSubmit', 'Home::updateSubmit');
-$routes->get('/updateDisplay', 'Home::updateDisplay');
+
+$routes->get('updateDisplay/(:any)', 'UpdateController::view/$1');
+						// make individual posts after 'Read More...' to make url -> eg. /updateDisplay/slug-of-post
+						// updateDisplay(:any) causes first empty slug to be called and printed
 $routes->get('/postDisplay', 'Home::postDisplay');
-$routes->get('/postSubmit', 'Home::postSubmit');
 
 $routes->match(['get', 'post'], '/login', 'UserController::index');
-// $routes->get('/login', 'UserController::index');
 $routes->match(['get', 'post',], '/register', 'UserController::register');
-
+$routes->match(['get', 'post',], '/logout', 'UserController::logout');
 
 $routes->match(['get', 'post',], '/updateSubmit', 'UpdateController::submit');
+
+$routes->match(['get', 'post',], '/postSubmit', 'PostController::submit');
 /**
  * --------------------------------------------------------------------
  * Additional Routing
@@ -55,7 +57,7 @@ $routes->match(['get', 'post',], '/updateSubmit', 'UpdateController::submit');
  * based routes is one such time. require() additional route files here
  * to make that happen.
  *
- * You will have access to the $routes object within that file without
+ * You will have access to theobject within that file withouturl_title
  * needing to reload it.
  */
 if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php'))

@@ -1,11 +1,40 @@
 <?php namespace App\Controllers;
 
 use App\Models\UpdateModel;
+use CodeIgniter\Controller;
 
 class UpdateController extends BaseController{
     public function index(){ //update page
 
+        # Create an instance of the news model.
+        $model = new UpdateModel();
+        
+        // $data['title'] = 'News Archive';
+        $data['news'] = $model->getNews();
 
+        echo view('templates/header', $data);
+        echo view('updates', $data);
+        echo view('templates/footer');
+
+    }
+
+    function view($slug = NULL){
+
+        $model = new UpdateModel();
+
+        $data['news'] = $model->getNews($slug);
+        
+        if (empty($data['news'])){
+
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Cannot find the news item: ' . $slug);
+        
+        }
+
+        $data['newsTitle'] = $data['news']['newsTitle'];
+        
+        echo view('templates/header', $data);
+        echo view('updateDisplay', $data);
+        echo view('templates/footer');
     }
 
     public function submit(){
@@ -28,6 +57,8 @@ class UpdateController extends BaseController{
                 $newData = [
                     'newsTitle' => $this->request->getVar('newsTitle'),
                     'newsDescription' => $this->request->getVar('newsDescription'),
+                    'newsAuthor' => session()->get('userScreenName'),
+                    'slug' => url_title($this->request->getPost('newsTitle'))
                 ];  //send our data to model
                 $model->save($newData); //save it
                 $session = session(); //create session

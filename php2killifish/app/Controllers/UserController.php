@@ -48,6 +48,7 @@ class UserController extends BaseController{
             'userLastName' => $user['userLastName'],
             'userScreenName' => $user['userScreenName'],
             'isLoggedIn' => true,
+            'userIsAdmin' => $user['userIsAdmin'] // takes value set in table field
         ];
 
         session()->set($data);
@@ -97,10 +98,11 @@ class UserController extends BaseController{
 
     }
 
-    // public function userLogout(){
+    public function logout(){ //logs out current user
 
-    //     $this->session->sess_destroy();
-    //     redirect('user/loginView', 'refresh');
-    // }
+        session()->destroy(); //destroys current session
+        return redirect()->to('home'); //redirects user to home page
+
+    }
 }
 ?>

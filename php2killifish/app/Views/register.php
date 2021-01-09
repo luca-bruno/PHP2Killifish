@@ -52,7 +52,7 @@
                         <!-- if validation fails, CI method listErrors() echoes validation faults  -->
                         <?php if (isset($validation)): ?>
                             <div class="col-12">
-                                <div class="alert alert-danger" >
+                                <div class="alert alert-danger">
                                     <?= $validation->listErrors() ?>
                                 </div>
                             </div>

@@ -1,6 +1,6 @@
 
 <body>
-    <div class="container">
+    <div class="container content">
         <div class="row mb-5"> 
             <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 mt-5 pt-3 pb-3">
                 <div class="middleButton boxBorder">

@@ -24,7 +24,8 @@ class UpdateModel extends Model{
     # Anything else will be taken care of by CodeIgniter.
     protected $allowedFields    = [
                                     'newsTitle',
-                                    'newsDescription'
+                                    'newsDescription',
+                                    'slug'
                                 ];
     
     # All activity will be recorded as timestamps.
@@ -36,5 +37,19 @@ class UpdateModel extends Model{
     # These are the fields that will be updated internally.
     protected $createdField     = 'newsCreated_at';
     protected $updatedField     = 'newsUpdated_at';
+
+    /**
+     *  Gets the news items from the table.
+     */
+    function getNews($slug = false)
+    {
+        if ($slug === false){
+            return $this->findAll();
+        }
+
+        return $this->asArray()
+                    ->where('slug', $slug) //error is returning first record without a slug
+                    ->first();
+    }
     
 }
