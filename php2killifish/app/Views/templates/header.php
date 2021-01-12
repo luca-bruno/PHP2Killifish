@@ -21,19 +21,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav m-auto">
         <li class="nav-item active">
-            <a class="nav-link" href="home"> 
+            <a class="nav-link" href="<?= base_url('/home'); ?>"> 
             <i class="material-icons ">home</i> Home</a>
         </li>
         <li class="nav-item active">
-            <a class="nav-link" href="about">
+            <a class="nav-link" href="<?= base_url('/about'); ?>">
             <i class="material-icons ">help</i> About</a>
         </li>   
         <li class="nav-item active">
-            <a class="nav-link" href="updates">
+            <a class="nav-link" href="<?= base_url('/updates'); ?>">
             <i class="material-icons ">announcement</i> Updates</a>
         </li>
         <li class="nav-item active">
-            <a class="nav-link" href="community">
+            <a class="nav-link" href="<?= base_url('/community'); ?>">
             <i class="material-icons ">group</i> Community</a>
         </li>
         </ul>

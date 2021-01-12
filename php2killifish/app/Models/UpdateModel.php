@@ -25,6 +25,7 @@ class UpdateModel extends Model{
     protected $allowedFields    = [
                                     'newsTitle',
                                     'newsDescription',
+                                    'newsAuthor',
                                     'slug'
                                 ];
     
@@ -47,8 +48,10 @@ class UpdateModel extends Model{
             return $this->findAll();
         }
 
-        return $this->asArray()
+        return $this->select('news.*, users.userFirstName, users.userLastName, users.userScreenName')
+                    ->asArray()
                     ->where('slug', $slug) //error is returning first record without a slug
+                    ->join('users', 'users.userID = news.newsAuthor', 'left')
                     ->first();
     }
     

@@ -57,7 +57,7 @@ class UpdateController extends BaseController{
                 $newData = [
                     'newsTitle' => $this->request->getVar('newsTitle'),
                     'newsDescription' => $this->request->getVar('newsDescription'),
-                    'newsAuthor' => session()->get('userScreenName'),
+                    'newsAuthor' => session()->get('userID'),
                     'slug' => url_title($this->request->getPost('newsTitle'))
                 ];  //send our data to model
                 $model->save($newData); //save it
