@@ -24,7 +24,9 @@ class PostModel extends Model{
     # Anything else will be taken care of by CodeIgniter.
     protected $allowedFields    = [
                                     'postTitle',
-                                    'postDescription'
+                                    'postDescription',
+                                    'postAuthor',
+                                    'postSlug'
                                 ];
     
     # All activity will be recorded as timestamps.
@@ -36,5 +38,21 @@ class PostModel extends Model{
     # These are the fields that will be updated internally.
     protected $createdField     = 'postCreated_at';
     protected $updatedField     = 'postUpdated_at';
+
+    /**
+     *  Gets the posts items from the table.
+     */
+    function getPosts($postSlug = false)
+    {
+        if ($postSlug === false){
+            return $this->findAll();
+        }
+
+        return $this->select('posts.*, users.userScreenName')
+                    ->asArray()
+                    ->where('postSlug', $postSlug) //error is returning first record without a slug
+                    ->join('users', 'users.userID = posts.postAuthor', 'left')
+                    ->first();
+    }
     
 }

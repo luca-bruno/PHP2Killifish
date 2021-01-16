@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 09, 2021 at 08:51 PM
+-- Generation Time: Jan 16, 2021 at 07:24 PM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.11
 
@@ -45,7 +45,7 @@ CREATE TABLE `news` (
   `newsID` int(10) UNSIGNED NOT NULL,
   `newsTitle` varchar(600) NOT NULL,
   `newsDescription` varchar(1000) NOT NULL,
-  `newsAuthor` varchar(600) NOT NULL,
+  `newsAuthor` int(10) UNSIGNED NOT NULL,
   `newsCreated_at` int(10) DEFAULT NULL,
   `newsUpdated_at` int(10) UNSIGNED DEFAULT NULL,
   `slug` varchar(128) NOT NULL
@@ -56,15 +56,13 @@ CREATE TABLE `news` (
 --
 
 INSERT INTO `news` (`newsID`, `newsTitle`, `newsDescription`, `newsAuthor`, `newsCreated_at`, `newsUpdated_at`, `slug`) VALUES
-(1, 'dsfdsfg', 'detfgdgs', '', 1608650990, 1608650990, 'asdfg-asdfg'),
-(2, '1212', '21212', '', 1608651287, 1608651287, 'sadasdasdad'),
-(3, '123122131', '131231231', '', 1608652274, 1608652274, 'qwerr-qwerr'),
-(4, 'aaaaaaaaa', 'aaaaaaaaaaaaaaaa', '', 1610200508, 1610200508, 'fghjk-fghjk'),
-(5, 'Test111', 'this is a test ', '', 1610213808, 1610213808, 'test_111'),
-(6, 'please work', 'please please work', '', 1610213859, 1610213859, 'please_work'),
-(7, '2312321', '312312312', '', 1610215145, 1610215145, '2312321'),
-(8, 'Elvis is sighted in Malta', 'Elvis is sighted in Malta', '', 1610219316, 1610219316, 'Elvis-is-sighted-in-Malta'),
-(9, 'please work', '3123', '', 1610221625, 1610221625, 'please-work');
+(4, 'Elvis sighted in Malta!', 'Hello Elvis', 19, NULL, NULL, 'elvis-sighted-in-malta'),
+(5, 'Elvis is sighted in Malta', 'Hello Elvis', 17, 1610463741, 1610463741, 'Elvis-is-sighted-in-Malta'),
+(6, 'newupdate', 'newupdate', 17, 1610463773, 1610463773, 'newupdate'),
+(7, 'Story', 'Il huta killiefish jisimha Jhon. Jhion kien jejx fil midrag fMarsascala, l-iktar post ikrah fmalta, issek ijjad maimi beach imma lost hope. Dan Jhon one fine morning mar dawra helwa fil bahar fejn kellu naqa aventuri sbieh. l ewwel mar passigata mal costa inehi il hmieg tan nies. Waqt din il mixja intaqa ma hafna ostacli fostom il hara li waqa dak il liba Ganni il papra. meta kien mixi intaqa ma Ross, kella koolox issikat u ippupat, kif raha Jhon mal ewwel qabez fuqa u qala \"Hawn irridek wara dan il haxix twil, mhux ha nkun lest sakem jibda johrog trab\". Dik kienet il mawra helwa ta Jhon, u lunika wahda li ha jkollu ghax miskin kielu Guzi il bass. But his legacy will live on ', 17, 1610813437, 1610813437, 'Story'),
+(8, 'Story Califronia', 'Kont għaddej mill-Imsida\r\nIlma dieħel mil-bibien\r\nRajt ħabib fuq il-bus stop\r\nGħidtlu inwaslek x\'imkien\r\nMinnu fieh daħal ġewwa\r\nMela t-twapet bit-tajn\r\nTfajtha first u għaqqadtomla ftit\r\nQisni ħriġt bid-disgħin\r\nQalli stenna ħa nqabbad\r\nU xammejt rieħa tfuħ\r\nHa ftit nifsijiet u newwiluli\r\nU dlonk jien ħadt ir-ruħ\r\nRħejnilha għal tas-Sliema\r\nMill-istrand għaddejin\r\nHares lejja b\'ħalqu miftuħ daqsiex\r\nU għajnejh imbexqin\r\nKif jien imġandar u imħassar\r\n- Xi smoke tajba din - Tinżillek fin fin - Zgur ta\'barra din\r\nKemm ili ma nkun daqshekk imċaflas\r\nWiċċi aħmar nar\r\nKull ma nara ċpar\r\nKif se mmur d-dar?\r\nSaqsieni jekk inhiex mgħaggel?\r\nGħidtlu no problem Joe\r\nQalli ninżlu sa l-Exiles\r\nForsi insiru coco\r\nU minn ġol-but ħareg borża\r\nKollha pirmli u x\'naf jien\r\nHareġ żewġ pesisi vjola\r\nU blajinhom flimkien', 17, 1610814239, 1610814239, 'Story-Califronia'),
+(9, 'habfhbadksdjlfI really have a long long long longggg longgg title', 'dsklfnSNFJNfnjd', 17, 1610819316, 1610819316, 'habfhbadksdjlf'),
+(10, 'I really have a long long long longggg longgg title', 'Batman, Batman, Batman, Batman!\r\n\r\nBatman, Batman, Batman!\r\n\r\nBatman, Batman, Batman, Batman!\r\n\r\nBatman, Batman, Batman!\r\n\r\nBatman, Batman, Batman!\r\n\r\nBatman, Batman, Batman!\r\n\r\nBatman, Batman, Batman!\r\n\r\nNa, na, na, na, na, na, na, na, na, na, na, na, na\r\n\r\nBatman!\r\n\r\n', 17, 1610819358, 1610819358, 'I-really-have-a-long-long-long-longggg-longgg-title');
 
 -- --------------------------------------------------------
 
@@ -77,16 +75,20 @@ CREATE TABLE `posts` (
   `postTitle` varchar(600) NOT NULL,
   `postDescription` varchar(1000) NOT NULL,
   `postCreated_at` int(10) DEFAULT NULL,
-  `postUpdated_at` int(10) UNSIGNED DEFAULT NULL
+  `postUpdated_at` int(10) UNSIGNED DEFAULT NULL,
+  `postSlug` varchar(600) NOT NULL,
+  `postAuthor` int(10) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `posts`
 --
 
-INSERT INTO `posts` (`postID`, `postTitle`, `postDescription`, `postCreated_at`, `postUpdated_at`) VALUES
-(1, 'post test 1', 'this is a test post', 1610207091, 1610207091),
-(2, 'dsada', 'sdada', 1610207148, 1610207148);
+INSERT INTO `posts` (`postID`, `postTitle`, `postDescription`, `postCreated_at`, `postUpdated_at`, `postSlug`, `postAuthor`) VALUES
+(1, 'first post', 'testing the post ', 1610809476, 1610809476, 'first-post', 20),
+(2, 'admin post', 'testing post', 1610810185, 1610810185, 'admin-post', 17),
+(3, 'I hate php I hate it with a passion Why I m living what is life ', '[Open to Morty’s room]\r\nRick: (stumbles in drunkenly, and turns on the lights) Morty! You gotta come on. You got--... you gotta come with me.\r\nMorty: (rubs his eyes) What, Rick? What’s going on?\r\nRick: I got a surprise for you, Morty.\r\nMorty: It\'s the middle of the night. What are you talking about?\r\nRick: (spills alcohol on Morty\'s bed) Come on, I got a surprise for you. (drags Morty by the ankle) Come on, hurry up. (pulls Morty out of his bed and into the hall)\r\nMorty: Ow! Ow! You\'re tugging me too hard!\r\nRick: We gotta go, gotta get outta here, come on. Got a surprise for you Morty.\r\n[Cut to Rick\'s ship]', 1610814002, 1610814002, 'I-hate-php-I-hate-it-with-a-passion-Why-I-m-living-what-is-life', 17),
+(4, 'Part 2 Of me Hating php and hating my life why I\'m living what is love baby don\'t hurt me don\'t hurt me no more', 'Malta Story is a 1953 British war film, directed by Brian Desmond Hurst, which is set during the air defence of Malta during the Siege of Malta in the Second World War.[2] The film uses real and unique footage of the locations at which the battles were fought and includes a love story between a RAF reconnaissance pilot and a Maltese woman, as well as the anticipated execution of her brother, caught as an Italian spy. The pilot is loosely based on Adrian Warburton; the Maltese woman\'s brother is based on Carmelo Borg Pisani, who was executed in 1942.', 1610814226, 1610814226, 'Part-2-Of-me-Hating-php-and-hating-my-life-why-Im-living-what-is-love-baby-dont-hurt-me-dont-hurt-me-no-more', 17);
 
 -- --------------------------------------------------------
 
@@ -142,13 +144,15 @@ ALTER TABLE `comments`
 -- Indexes for table `news`
 --
 ALTER TABLE `news`
-  ADD PRIMARY KEY (`newsID`);
+  ADD PRIMARY KEY (`newsID`),
+  ADD KEY `FK_newsAuthor` (`newsAuthor`);
 
 --
 -- Indexes for table `posts`
 --
 ALTER TABLE `posts`
-  ADD PRIMARY KEY (`postID`);
+  ADD PRIMARY KEY (`postID`),
+  ADD KEY `FK_postAuthor` (`postAuthor`);
 
 --
 -- Indexes for table `users`
@@ -170,19 +174,35 @@ ALTER TABLE `comments`
 -- AUTO_INCREMENT for table `news`
 --
 ALTER TABLE `news`
-  MODIFY `newsID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `newsID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `postID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `postID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
   MODIFY `userID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `news`
+--
+ALTER TABLE `news`
+  ADD CONSTRAINT `FK_newsAuthor` FOREIGN KEY (`newsAuthor`) REFERENCES `users` (`userID`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+--
+-- Constraints for table `posts`
+--
+ALTER TABLE `posts`
+  ADD CONSTRAINT `FK_postAuthor` FOREIGN KEY (`postAuthor`) REFERENCES `users` (`userID`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

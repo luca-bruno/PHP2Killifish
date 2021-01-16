@@ -27,12 +27,12 @@ class Home extends BaseController
 	// }
 
 	// http://localhost/php2killifish/php2killifish/public/community
-	public function community()
-	{
-		echo view('templates/header');
-		echo view('community');
-		echo view('templates/footer');
-	}
+	// public function community()
+	// {
+	// 	echo view('templates/header');
+	// 	echo view('community');
+	// 	echo view('templates/footer');
+	// }
 
 	// http://localhost/php2killifish/php2killifish/public/updates
 	public function updates()
@@ -59,12 +59,12 @@ class Home extends BaseController
 	// }
 
 	// http://localhost/php2killifish/php2killifish/public/postDisplay
-	public function postDisplay()
-	{
-		echo view('templates/header');
-		echo view('postDisplay');
-		echo view('templates/footer');
-	}
+	// public function postDisplay()
+	// {
+	// 	echo view('templates/header');
+	// 	echo view('postDisplay');
+	// 	echo view('templates/footer');
+	// }
 
 
 }

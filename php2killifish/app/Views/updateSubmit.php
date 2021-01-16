@@ -6,7 +6,7 @@
         <div class="container mt-3 content">
             <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 pt-3 pb-3">
                 <div class="row mb-3 boxBorder">
-                    <a href="updates">Back</a>
+                    <a class="expandMenuButton" href="updates">Back</a>
                     <br> 
                     <div class="container">
                         <h2 class="text-center">Update</h2>
@@ -48,11 +48,15 @@
 
     <?php else: ?>
 
-    <div class="col-12 alert alert-danger text-center mb-auto content">
+    <!-- <div class="col-12 alert alert-danger text-center mb-auto content">
         <div>
             <h1>Access denied</h1>
             <p>Directory access is forbidden.</p>
         </div>
-    </div>
+    </div> -->
+
+    <?php throw new \CodeIgniter\Router\Exceptions\RedirectException('updates'); ?>
+    <!-- throws CI exception to automatically redirect to update page, should user accessing through directory/URL not have admin privileges or is not logged in -->
+
 
     <?php endif; ?>

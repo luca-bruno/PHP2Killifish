@@ -1,11 +1,12 @@
-    <footer class="bg-primary text-light py-3 footer">
-        <div class="container">
+    <footer class="py-3 footer">
+        <div class="container-fluid">
             <div class="row">
-                <div class="text-center text-lg-left col-12 col-lg-5 order-2 order-lg-1 my-3 my-lg-0">
-                    &copy; 2021 &bull; Killifish TBA
+                <div class="vertical-center text-center text-lg-left col-12 col-lg-6 order-lg-1 my-3 my-lg-0">
+                    &copy; 2021 &bull; Endemic
                 </div>
-                <div class="text-center text-lg-right col-12 col-lg-5 order-2 order-lg-1 my-3 my-lg-0">
-                    <!-- add in NGO logo, make it href to link to their own website -->
+                <div class="text-center text-lg-right col-12 col-lg-6 order-lg-1 my-3 my-lg-0">
+                    <a href="https://www.mcast.edu.mt/"><img class="mcast-image" alt="MCAST logo" src="<?php echo base_url('assets/resources/mcastLogo.png'); ?>"></a>
+                    <a href="https://naturetrustmalta.org/"><img class="ngo-image" alt="Nature Trust logo" src="<?php echo base_url('assets/resources/natureTrustLogo.png'); ?>"></a>
                 </div>     
             </div>
         </div>

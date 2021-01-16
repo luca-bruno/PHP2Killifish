@@ -4,7 +4,37 @@ use App\Models\PostModel;
 
 class PostController extends BaseController{
     public function index(){ //community post page
+        
+        # Create an instance of the post model.
+        $model = new PostModel();
+        
+        // $data['title'] = 'News Archive';
+        $data['posts'] = $model->getPosts();
 
+        echo view('templates/header', $data);
+        echo view('community', $data);
+        echo view('templates/footer');
+
+    }
+
+    function view($postSlug = NULL){
+
+        $model = new PostModel();
+
+        $data['posts'] = $model->getPosts($postSlug);
+        
+        if (empty($data['posts'])){
+
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Cannot find the post item: ' . $postSlug);
+        
+        }
+
+        $data['postTitle'] = $data['posts']['postTitle'];
+        
+        echo view('templates/header', $data);
+        echo view('postDisplay', $data);
+        echo view('templates/footer');
+    
 
     }
 
@@ -28,6 +58,8 @@ class PostController extends BaseController{
                 $newData = [
                     'postTitle' => $this->request->getVar('postTitle'),
                     'postDescription' => $this->request->getVar('postDescription'),
+                    'postAuthor' => session()->get('userID'),
+                    'postSlug' => url_title($this->request->getPost('postTitle'))
                 ];  //send our data to model
                 $model->save($newData); //save it
                 $session = session(); //create session

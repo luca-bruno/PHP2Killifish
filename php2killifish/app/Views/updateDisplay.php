@@ -2,7 +2,7 @@
     <div class="container content">
         <div class="mt-5 pt-1 pb-5">
             <div class="boxBorder">
-                <a href="updates">Back</a>
+                <a class="expandMenuButton" href="<?= base_url('/updates'); ?>">Back</a>
                 <br>
                 <img class="imageCenter" alt="Latest Update" src="https://i.pravatar.cc/150?img=50">
                 <h2 class="text-center"> <?= esc($news['newsTitle']); ?></h2>

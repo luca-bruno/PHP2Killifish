@@ -3,7 +3,7 @@
         <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 pt-3 pb-3">
             
             <div class="row mb-3 boxBorder">
-                <a href="community">Back</a>
+                <a class="expandMenuButton" href="community">Back</a>
                 <br> 
                 <div class="container">
                     <h2 class="text-center">Community</h2>

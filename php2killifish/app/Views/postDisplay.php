@@ -3,15 +3,15 @@
     <div class="container content">
         <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 mt-5 pt-3 pb-3">
             <div class="boxBorder" >
-                <a href="community">Back</a>
+                <a  href="<?= base_url('/community'); ?>">Back</a>
                 <br>
                 <img class="imageCenter" alt="Post1" src="https://i.pravatar.cc/150?img=50">
-                    <h3 > Post1</h3>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <h3 ><?= esc($posts['postTitle']); ?></h3>
+                    <p><?= esc($posts['postDescription']); ?></p>
                     <hr>
                     <div class="row">
                         <div class="col-12 col-sm-4">
-                            <i class="material-icons">face</i> User1
+                            <i class="material-icons">face</i> <?= esc($posts['userScreenName']); ?>
                         </div>
                         <div class="col-12 col-sm-8 text-right">
                             <button type="submit" > <i  class="material-icons space">thumb_up</i></button>
