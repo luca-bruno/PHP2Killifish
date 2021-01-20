@@ -44,15 +44,18 @@ class PostModel extends Model{
      */
     function getPosts($postSlug = false)
     {
-        if ($postSlug === false){
-            return $this->findAll();
+        $builder = $this->db->table('posts');
+
+        $builder->select('posts.*, users.userScreenName')
+                    ->join('users', 'posts.postAuthor = users.userID', 'left');
+
+        if ($postSlug !== false)
+        {
+            $builder->where('postSlug', $postSlug); //error is returning first record without a slug
         }
 
-        return $this->select('posts.*, users.userScreenName')
-                    ->asArray()
-                    ->where('postSlug', $postSlug) //error is returning first record without a slug
-                    ->join('users', 'users.userID = posts.postAuthor', 'left')
-                    ->first();
+        $result = $builder->get()->getResultArray();
+        return count($result) == 1 ? $result[0] : $result;
     }
     
 }

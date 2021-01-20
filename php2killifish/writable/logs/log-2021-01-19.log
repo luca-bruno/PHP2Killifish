@@ -1,0 +1,58 @@
+CRITICAL - 2021-01-19 07:09:31 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::numRows()
+#0 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\PostController.php(12): App\Models\PostModel->getPosts()
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\PostController->index()
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-19 07:09:39 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::num_rows()
+#0 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\PostController.php(12): App\Models\PostModel->getPosts()
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\PostController->index()
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-19 07:10:12 --> Call to undefined method App\Models\PostModel::numRows
+#0 E:\xampp\htdocs\php2killifish\php2killifish\app\Models\PostModel.php(58): CodeIgniter\Model->__call('numRows', Array)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\PostController.php(12): App\Models\PostModel->getPosts()
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\PostController->index()
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#4 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-19 07:13:28 --> Undefined index: postTitle
+#0 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\PostController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'E:\\xampp\\htdocs...', 32, Array)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\PostController->view('Part-2-Of-me-Ha...')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-19 07:13:58 --> Undefined index: postTitle
+#0 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\PostController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'E:\\xampp\\htdocs...', 33, Array)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\PostController->view('Part-2-Of-me-Ha...')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-19 07:13:59 --> Undefined index: postTitle
+#0 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\PostController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'E:\\xampp\\htdocs...', 33, Array)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\PostController->view('Part-2-Of-me-Ha...')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-19 07:14:00 --> Undefined index: postTitle
+#0 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\PostController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'E:\\xampp\\htdocs...', 33, Array)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\PostController->view('Part-2-Of-me-Ha...')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-19 07:16:51 --> Undefined property: CodeIgniter\Database\MySQLi\Builder::$numRows
+#0 E:\xampp\htdocs\php2killifish\php2killifish\app\Models\PostModel.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'E:\\xampp\\htdocs...', 59, Array)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\PostController.php(24): App\Models\PostModel->getPosts('Part-2-Of-me-Ha...')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\PostController->view('Part-2-Of-me-Ha...')
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#4 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}

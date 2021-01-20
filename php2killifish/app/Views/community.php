@@ -3,9 +3,9 @@
     <div class="container content">
         <div class="row mb-5"> 
             <div class="col-12 col-sm-8 offset-sm-2 col-md-8 mt-5 pt-3 pb-3">
-                <div class="middleButton boxBorder">
-                    <i  class="material-icons">add_circle_outline</i>
-                    <a  class="expandMenuButton" href="postSubmit">Create A Post</a>
+                <div class="middleButton boxBorder createPost">
+                    <a class="expandMenuButton" href="postSubmit">
+                    <i class="material-icons">add_circle_outline</i>Create A Post</a>
                 </div>
                 <br>
 
@@ -18,7 +18,7 @@
                                 <hr>
                                 <div class="row">
                                     <div class="col-12 col-sm-4">
-                                        <i class="material-icons">face</i> <?= esc($post_item['postAuthor']); ?>
+                                        <i class="material-icons">face</i> <?= esc($post_item['userScreenName']); ?>
                                     </div>
                                     <div class="col-12 col-sm-8 text-right">
                                         <button type="submit" > <i  class="material-icons space">thumb_up</i></button>
