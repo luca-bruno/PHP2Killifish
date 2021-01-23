@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 16, 2021 at 07:24 PM
+-- Generation Time: Jan 23, 2021 at 08:07 PM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.11
 
@@ -32,8 +32,26 @@ CREATE TABLE `comments` (
   `commentID` int(10) UNSIGNED NOT NULL,
   `commentDescription` varchar(1000) NOT NULL,
   `commentCreated_at` int(10) DEFAULT NULL,
-  `commentUpdated_at` int(10) UNSIGNED DEFAULT NULL
+  `commentUpdated_at` int(10) UNSIGNED DEFAULT NULL,
+  `commentSlug` varchar(128) NOT NULL,
+  `commentAuthor` int(10) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `comments`
+--
+
+INSERT INTO `comments` (`commentID`, `commentDescription`, `commentCreated_at`, `commentUpdated_at`, `commentSlug`, `commentAuthor`) VALUES
+(1, 'adasdsaadadasd', 1611402978, 1611402978, '', 17),
+(2, 'adasdsaadadasd', 1611403055, 1611403055, '', 17),
+(3, 'adasdsaadadasd', 1611403464, 1611403464, '', 17),
+(4, 'adasdsaadadasd', 1611404196, 1611404196, '', 17),
+(5, 'azzaz', 1611404772, 1611404772, '', 17),
+(6, '12315212341251242141', 1611404867, 1611404867, '', 17),
+(7, 'dadad', 1611406389, 1611406389, '', 17),
+(8, 'sdvdfsdv', 1611406789, 1611406789, '', 17),
+(9, '31321314215', 1611407625, 1611407625, '', 17),
+(10, 'adasddad', 1611409053, 1611409053, '', 17);
 
 -- --------------------------------------------------------
 
@@ -48,21 +66,34 @@ CREATE TABLE `news` (
   `newsAuthor` int(10) UNSIGNED NOT NULL,
   `newsCreated_at` int(10) DEFAULT NULL,
   `newsUpdated_at` int(10) UNSIGNED DEFAULT NULL,
-  `slug` varchar(128) NOT NULL
+  `newsSlug` varchar(128) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `news`
 --
 
-INSERT INTO `news` (`newsID`, `newsTitle`, `newsDescription`, `newsAuthor`, `newsCreated_at`, `newsUpdated_at`, `slug`) VALUES
+INSERT INTO `news` (`newsID`, `newsTitle`, `newsDescription`, `newsAuthor`, `newsCreated_at`, `newsUpdated_at`, `newsSlug`) VALUES
 (4, 'Elvis sighted in Malta!', 'Hello Elvis', 19, NULL, NULL, 'elvis-sighted-in-malta'),
 (5, 'Elvis is sighted in Malta', 'Hello Elvis', 17, 1610463741, 1610463741, 'Elvis-is-sighted-in-Malta'),
 (6, 'newupdate', 'newupdate', 17, 1610463773, 1610463773, 'newupdate'),
 (7, 'Story', 'Il huta killiefish jisimha Jhon. Jhion kien jejx fil midrag fMarsascala, l-iktar post ikrah fmalta, issek ijjad maimi beach imma lost hope. Dan Jhon one fine morning mar dawra helwa fil bahar fejn kellu naqa aventuri sbieh. l ewwel mar passigata mal costa inehi il hmieg tan nies. Waqt din il mixja intaqa ma hafna ostacli fostom il hara li waqa dak il liba Ganni il papra. meta kien mixi intaqa ma Ross, kella koolox issikat u ippupat, kif raha Jhon mal ewwel qabez fuqa u qala \"Hawn irridek wara dan il haxix twil, mhux ha nkun lest sakem jibda johrog trab\". Dik kienet il mawra helwa ta Jhon, u lunika wahda li ha jkollu ghax miskin kielu Guzi il bass. But his legacy will live on ', 17, 1610813437, 1610813437, 'Story'),
 (8, 'Story Califronia', 'Kont għaddej mill-Imsida\r\nIlma dieħel mil-bibien\r\nRajt ħabib fuq il-bus stop\r\nGħidtlu inwaslek x\'imkien\r\nMinnu fieh daħal ġewwa\r\nMela t-twapet bit-tajn\r\nTfajtha first u għaqqadtomla ftit\r\nQisni ħriġt bid-disgħin\r\nQalli stenna ħa nqabbad\r\nU xammejt rieħa tfuħ\r\nHa ftit nifsijiet u newwiluli\r\nU dlonk jien ħadt ir-ruħ\r\nRħejnilha għal tas-Sliema\r\nMill-istrand għaddejin\r\nHares lejja b\'ħalqu miftuħ daqsiex\r\nU għajnejh imbexqin\r\nKif jien imġandar u imħassar\r\n- Xi smoke tajba din - Tinżillek fin fin - Zgur ta\'barra din\r\nKemm ili ma nkun daqshekk imċaflas\r\nWiċċi aħmar nar\r\nKull ma nara ċpar\r\nKif se mmur d-dar?\r\nSaqsieni jekk inhiex mgħaggel?\r\nGħidtlu no problem Joe\r\nQalli ninżlu sa l-Exiles\r\nForsi insiru coco\r\nU minn ġol-but ħareg borża\r\nKollha pirmli u x\'naf jien\r\nHareġ żewġ pesisi vjola\r\nU blajinhom flimkien', 17, 1610814239, 1610814239, 'Story-Califronia'),
 (9, 'habfhbadksdjlfI really have a long long long longggg longgg title', 'dsklfnSNFJNfnjd', 17, 1610819316, 1610819316, 'habfhbadksdjlf'),
-(10, 'I really have a long long long longggg longgg title', 'Batman, Batman, Batman, Batman!\r\n\r\nBatman, Batman, Batman!\r\n\r\nBatman, Batman, Batman, Batman!\r\n\r\nBatman, Batman, Batman!\r\n\r\nBatman, Batman, Batman!\r\n\r\nBatman, Batman, Batman!\r\n\r\nBatman, Batman, Batman!\r\n\r\nNa, na, na, na, na, na, na, na, na, na, na, na, na\r\n\r\nBatman!\r\n\r\n', 17, 1610819358, 1610819358, 'I-really-have-a-long-long-long-longggg-longgg-title');
+(10, 'I really have a long long long longggg longgg title', 'Batman, Batman, Batman, Batman!\r\n\r\nBatman, Batman, Batman!\r\n\r\nBatman, Batman, Batman, Batman!\r\n\r\nBatman, Batman, Batman!\r\n\r\nBatman, Batman, Batman!\r\n\r\nBatman, Batman, Batman!\r\n\r\nBatman, Batman, Batman!\r\n\r\nNa, na, na, na, na, na, na, na, na, na, na, na, na\r\n\r\nBatman!\r\n\r\n', 17, 1610819358, 1610819358, 'I-really-have-a-long-long-long-longggg-longgg-title'),
+(11, 'My name Jeff', 'My name jeff please image work', 17, 1611397188, 1611397188, 'My-name-Jeff'),
+(12, 'My name Jeff', 'My name jeff please image work', 17, 1611397419, 1611397419, 'My-name-Jeff'),
+(13, 'My name Jeff', 'gsd', 17, 1611401137, 1611401137, 'My-name-Jeff'),
+(14, 'dsfsdf', 'sdfggsdg', 17, 1611401165, 1611401165, 'dsfsdf'),
+(15, 'dsfsdf', 'sdfggsdg', 17, 1611401190, 1611401190, 'dsfsdf'),
+(16, 'dsfsdf', 'sdfggsdg', 17, 1611401215, 1611401215, 'dsfsdf'),
+(17, 'dsfsdf', 'sdfggsdg', 17, 1611401267, 1611401267, 'dsfsdf'),
+(18, 'dsfsdf', 'sdfggsdg', 17, 1611401299, 1611401299, 'dsfsdf'),
+(19, 'dsfsdf', 'dfgdfgdfgd', 17, 1611401314, 1611401314, 'dsfsdf'),
+(20, '312313131', '31321321313', 17, 1611401329, 1611401329, '312313131'),
+(21, '312313', '123131241215214', 17, 1611401405, 1611401405, '312313'),
+(22, 'again', '1254215236433412', 17, 1611401499, 1611401499, 'again'),
+(23, '312313', '1313133', 17, 1611401607, 1611401607, '312313');
 
 -- --------------------------------------------------------
 
@@ -138,7 +169,8 @@ INSERT INTO `users` (`userID`, `userFirstName`, `userLastName`, `userScreenName`
 -- Indexes for table `comments`
 --
 ALTER TABLE `comments`
-  ADD PRIMARY KEY (`commentID`);
+  ADD PRIMARY KEY (`commentID`),
+  ADD KEY `FK_commentAuthor` (`commentAuthor`);
 
 --
 -- Indexes for table `news`
@@ -168,13 +200,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `comments`
 --
 ALTER TABLE `comments`
-  MODIFY `commentID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `commentID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `news`
 --
 ALTER TABLE `news`
-  MODIFY `newsID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `newsID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `posts`
@@ -191,6 +223,12 @@ ALTER TABLE `users`
 --
 -- Constraints for dumped tables
 --
+
+--
+-- Constraints for table `comments`
+--
+ALTER TABLE `comments`
+  ADD CONSTRAINT `FK_commentAuthor` FOREIGN KEY (`commentAuthor`) REFERENCES `users` (`userID`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Constraints for table `news`

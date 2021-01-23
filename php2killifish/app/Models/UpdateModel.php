@@ -26,7 +26,7 @@ class UpdateModel extends Model{
                                     'newsTitle',
                                     'newsDescription',
                                     'newsAuthor',
-                                    'slug'
+                                    'newsSlug'
                                 ];
     
     # All activity will be recorded as timestamps.
@@ -42,15 +42,15 @@ class UpdateModel extends Model{
     /**
      *  Gets the news items from the table.
      */
-    function getNews($slug = false)
+    function getNews($newsSlug = false)
     {
-        if ($slug === false){
+        if ($newsSlug === false){
             return $this->findAll();
         }
 
         return $this->select('news.*, users.userFirstName, users.userLastName, users.userScreenName')
                     ->asArray()
-                    ->where('slug', $slug) //error is returning first record without a slug
+                    ->where('newsSlug', $newsSlug) //error is returning first record without a newsSlug
                     ->join('users', 'users.userID = news.newsAuthor', 'left')
                     ->first();
     }

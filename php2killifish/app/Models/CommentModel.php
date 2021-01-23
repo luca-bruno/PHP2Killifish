@@ -5,12 +5,12 @@ namespace App\Models;
 # The default model class.
 use CodeIgniter\Model;
 
-class PostModel extends Model{
+class CommentModel extends Model{
     # The table to link with.
-    protected $table        = 'posts';
+    protected $table        = 'comments';
 
     # The primary key reference.
-    protected $primaryKey   = 'postID';
+    protected $primaryKey   = 'commentID';
 
 
     # What kind of data a query will return.
@@ -18,14 +18,14 @@ class PostModel extends Model{
 
     // # This makes sure the controller will never delete a field.
     // protected $useSoftDeletes   = true;
+    
 
-    # These are the fields/columns that can be edited by the user when creating a post.
+    # These are the fields/columns that can be edited by the user when creating a comment.
     # Anything else will be taken care of by CodeIgniter.
     protected $allowedFields    = [
-                                    'postTitle',
-                                    'postDescription',
-                                    'postAuthor',
-                                    'postSlug'
+                                    'commentDescription',
+                                    'commentAuthor',
+                                    'commentSlug'
                                 ];
     
     # All activity will be recorded as timestamps.
@@ -35,22 +35,22 @@ class PostModel extends Model{
     protected $dateFormat       = 'int';
 
     # These are the fields that will be updated internally.
-    protected $createdField     = 'postCreated_at';
-    protected $updatedField     = 'postUpdated_at';
+    protected $createdField     = 'commentCreated_at';
+    protected $updatedField     = 'commentUpdated_at';
 
     /**
-     *  Gets the posts items from the table.
+     *  Gets the comments items from the table.
      */
-    function getPosts($postSlug = false)
+    function getComments($commentSlug = false)
     {
-        $builder = $this->db->table('posts');
+        $builder = $this->db->table('comments');
 
-        $builder->select('posts.*, users.userScreenName')
-                    ->join('users', 'posts.postAuthor = users.userID', 'left');
+        $builder->select('comments.*, users.userScreenName')
+                    ->join('users', 'comments.commentAuthor = users.userID', 'left');
 
-        if ($postSlug !== false)
+        if ($commentSlug !== false)
         {
-            $builder->where('postSlug', $postSlug); //error is returning first record without a slug
+            $builder->where('commentSlug', $commentSlug); //error is returning first record without a slug
         }
 
         $result = $builder->get()->getResultArray();

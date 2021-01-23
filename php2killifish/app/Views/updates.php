@@ -20,7 +20,7 @@
                         <?= esc(end($news)['newsDescription']); ?>
                     </div>
                     <div class="text-right">
-                        <a class="expandMenuButton" href="updateDisplay/<?= esc(end($news)['slug'], 'url'); ?>">Read More</a>
+                        <a class="expandMenuButton" href="updateDisplay/<?= esc(end($news)['newsSlug'], 'url'); ?>">Read More</a>
                     </div>
                 </div>
                 <?php else: ?>
@@ -43,7 +43,7 @@
                             </div>
                             <!-- button -->
                             <div class="text-right">
-                                <a class="expandMenuButton" href="updateDisplay/<?= esc($news_item['slug'], 'url'); ?>">Read More</a>
+                                <a class="expandMenuButton" href="updateDisplay/<?= esc($news_item['newsSlug'], 'url'); ?>">Read More</a>
                             </div>
                             <!-- <p> <a href="/ci-news/public/news/view/">View Article</a></p> -->
                         </div>

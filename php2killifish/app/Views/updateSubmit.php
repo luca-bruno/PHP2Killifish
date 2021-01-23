@@ -15,7 +15,7 @@
                     </div>
                     <form class="w-100" action="updateSubmit" method="post">
                         <div class="form-group">
-                            <label class="center" for="newsTitle">Title</label>
+                            <label for="newsTitle">Title</label>
                             <input type="text" class="form-control" name="newsTitle" id="newsTitle" value="<?= set_value('newsTitle') ?>">
                         </div>
 
@@ -24,12 +24,14 @@
                             <textarea type="text" class="form-control" name="newsDescription" id="newsDescription" ><?php echo set_value('newsDescription'); ?></textarea>
                         </div>
                         
-                        <!-- <div class="form-group">
-                            <label for="newsImage"></label>
-                            <input type="file" class="form-control-file" placeholder="Enter Media" name="media">
-                        </div> -->                    
-                        
-                            <!-- if validation fails, CI method listErrors() echoes validation faults  -->
+                        <div class="form-group">
+                            <div class="custom-file">
+                                    <label for="image" class="custom-file-label">Upload image</label>
+                                    <input type="file" class="custom-file-input" name="image" id="image">
+                                </div>
+                            
+                        </div>                    
+                        <!-- if validation fails, CI method listErrors() echoes validation faults  -->
                         
                         <?php if (isset($validation)): ?>
                                 <div class="col-12">

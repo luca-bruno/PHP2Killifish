@@ -4,6 +4,9 @@ use App\Models\UpdateModel;
 use CodeIgniter\Controller;
 
 class UpdateController extends BaseController{
+    
+    protected $imagesFolder = 'uploads/updates';
+
     public function index(){ //update page
 
         # Create an instance of the news model.
@@ -18,15 +21,15 @@ class UpdateController extends BaseController{
 
     }
 
-    function view($slug = NULL){
+    function view($newsSlug = NULL){
 
         $model = new UpdateModel();
 
-        $data['news'] = $model->getNews($slug);
+        $data['news'] = $model->getNews($newsSlug);
         
         if (empty($data['news'])){
 
-            throw new \CodeIgniter\Exceptions\PageNotFoundException('Cannot find the news item: ' . $slug);
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Cannot find the news item: ' . $newsSlug);
         
         }
 
@@ -45,7 +48,7 @@ class UpdateController extends BaseController{
             $rules = [
                 'newsTitle'                   => 'required|min_length[3]|max_length[600]',
                 'newsDescription'             => 'required|min_length[3]|max_length[1000]',
-                // 'newsImage'                => 'max_size[image,4096]|is_image[image]|ext_in[image,jpg,jpeg,gif,png]'
+                'image'                       => 'max_size[image,4096]|is_image[image]|ext_in[image,jpg,jpeg,gif,png]'
             ];
 
             if (! $this->validate($rules)){ //if form is not valid
@@ -58,9 +61,10 @@ class UpdateController extends BaseController{
                     'newsTitle' => $this->request->getVar('newsTitle'),
                     'newsDescription' => $this->request->getVar('newsDescription'),
                     'newsAuthor' => session()->get('userID'),
-                    'slug' => url_title($this->request->getPost('newsTitle'))
+                    'newsSlug' => url_title($this->request->getPost('newsTitle'))
                 ];  //send our data to model
                 $model->save($newData); //save it
+                $this->uploadImage($id);
                 $session = session(); //create session
                 $session->setFlashdata('success', 'Update successfully added'); //displays success dialog as flashdata (session data that will only be available for the next request)
                 return redirect()->to('updates'); //return user to update page
@@ -69,12 +73,66 @@ class UpdateController extends BaseController{
 
         echo view('templates/header', $data);
 		echo view('updateSubmit');
-		echo view('templates/footer');
+        echo view('templates/footer');
     }
 
 
-    // public function display(){
+    /**
+	 * Checks that a folder exists in the path, and will create one if not.
+	 */
+	protected function checkFolder($path)
+	{
+		// Split the path into folders.
+		$folders = explode('/', $path);
 
-    // }
+		// Set the first folder for use.
+		$folder = reset($folders);
+
+		// Clear the path so it can be built one step at a time.
+		$path = $folder;
+
+		while ($folder != null)
+		{
+			// skip the loop if the folder is already there.
+			if (!file_exists($path) || !is_dir($path))
+			{
+				// create the folder.
+				mkdir($path);
+				
+				// sets the permissions so the folder can be deleted manually.
+				// chmod($path, 0777);
+			}
+
+			// move to the next folder and build the next path.
+			$folder = next($folders);
+			$path .= "/{$folder}";
+		}
+    }
+    
+
+    protected function uploadImage($id)
+    {
+        $image = $this->request->getFile('image');
+
+        if ($image->getName() != '')
+        {
+            // Generate a new name for this file.
+            $newName = "{$id}.{$image->getClientExtension()}";
+
+            // Make sure the folder exists.
+            $this->checkFolder($this->imagesFolder);
+
+            // Delete other images with the same ID.
+            $path = "{$this->imagesFolder}/{$id}.*";
+            $images = glob($path);
+
+            // Loop through all the items and delete the file(s).
+            foreach ($images as $file)
+                unlink($file);
+
+            // Move the image to the new folder using a new name.
+            $image->move($this->imagesFolder, $newName);
+        }
+    }
 }
 ?>

@@ -36,8 +36,6 @@ $routes->get('/updates', 'UpdateController::index');
 $routes->get('/community', 'PostController::index');
 
 $routes->get('updateDisplay/(:any)', 'UpdateController::view/$1');
-						// make individual posts after 'Read More...' to make url -> eg. /updateDisplay/slug-of-post
-						// updateDisplay(:any) causes first empty slug to be called and printed
 $routes->get('postDisplay/(:any)', 'PostController::view/$1');
 
 $routes->match(['get', 'post'], '/login', 'UserController::index');
@@ -47,6 +45,8 @@ $routes->match(['get', 'post',], '/logout', 'UserController::logout');
 $routes->match(['get', 'post',], '/updateSubmit', 'UpdateController::submit');
 
 $routes->match(['get', 'post',], '/postSubmit', 'PostController::submit');
+
+$routes->match(['get', 'post',], '/postDisplay', 'CommentController::submit');
 /**
  * --------------------------------------------------------------------
  * Additional Routing

@@ -1,5 +1,6 @@
 
 <body>
+    <!-- Post -->
     <div class="container content">
         <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 mt-5 pt-3 pb-3">
             <div class="boxBorder" >
@@ -19,15 +20,28 @@
                         </div>
                     </div>
             </div>
+
             <div class="boxBorder" >
+                <!--  New comment input -->
                 <div class="row">
-                    <form class="w-100" action="/" method="post">
+                    <form class="w-100" action="<?= base_url('/postDisplay') ?>" method="post">
                         <div class="col-12">
-                            <i class="material-icons">face</i> User_logedIn
+                            <!-- <i class="material-icons">face</i> User_logedIn -->
+
                             <div class="form-group">
-                                <label for="comment"></label>
-                                <textarea type="text" class="form-control" name="comment" id="comment" placeholder="Comment"></textarea>
+                                <label for="commentDescription">Comment</label>
+                                <textarea type="text" class="form-control" name="commentDescription" id="commentDescription" ></textarea>
                             </div>
+                            <!-- if validation fails, CI method listErrors() echoes validation faults  -->
+                        
+                            <?php if (isset($validation)): ?>
+                                    <div class="col-12">
+                                        <div class="alert alert-danger">
+                                            <?= $validation->listErrors() ?>
+                                        </div>
+                                    </div>
+                            <?php endif; ?>
+
                             <div class="col-12 text-right">
                                 <button type="submit"> <i  class="material-icons space">arrow_forward</i></button>
                             </div>
@@ -35,6 +49,7 @@
                     </form>
                 </div>
                 <hr>
+                <!-- Previously posted comments -->
                 <div class="row">
                         <div class="col-12 col-sm-8">
                             <i class="material-icons">face</i> User2:
