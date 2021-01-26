@@ -31,6 +31,7 @@
                             <div class="form-group">
                                 <label for="commentDescription">Comment</label>
                                 <textarea type="text" class="form-control" name="commentDescription" id="commentDescription" ></textarea>
+                                <input type="hidden" name="parent-post-id" value="<?= esc($posts['postID']); ?>">
                             </div>
                             <!-- if validation fails, CI method listErrors() echoes validation faults  -->
                         

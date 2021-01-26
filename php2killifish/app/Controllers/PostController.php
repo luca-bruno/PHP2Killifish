@@ -20,6 +20,7 @@ class PostController extends BaseController{
     function view($postSlug = NULL){
 
         $model = new PostModel();
+        helper(['form']);
 
         $data['posts'] = $model->getPosts($postSlug);
         

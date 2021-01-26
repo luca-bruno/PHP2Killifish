@@ -46,7 +46,7 @@ $routes->match(['get', 'post',], '/updateSubmit', 'UpdateController::submit');
 
 $routes->match(['get', 'post',], '/postSubmit', 'PostController::submit');
 
-$routes->match(['get', 'post',], '/postDisplay', 'CommentController::submit');
+$routes->match(['post',], '/postDisplay', 'CommentController::submit');
 /**
  * --------------------------------------------------------------------
  * Additional Routing

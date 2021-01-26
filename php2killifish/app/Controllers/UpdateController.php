@@ -50,7 +50,7 @@ class UpdateController extends BaseController{
                 'newsDescription'             => 'required|min_length[3]|max_length[1000]',
                 'image'                       => 'max_size[image,4096]|is_image[image]|ext_in[image,jpg,jpeg,gif,png]'
             ];
-
+            
             if (! $this->validate($rules)){ //if form is not valid
                 $data['validation'] = $this->validator; 
                 //validate() method only returns true if form passes with no rules failed
@@ -64,6 +64,7 @@ class UpdateController extends BaseController{
                     'newsSlug' => url_title($this->request->getPost('newsTitle'))
                 ];  //send our data to model
                 $model->save($newData); //save it
+                $id = $model->getInsertID();// insert id of the last update.
                 $this->uploadImage($id);
                 $session = session(); //create session
                 $session->setFlashdata('success', 'Update successfully added'); //displays success dialog as flashdata (session data that will only be available for the next request)
@@ -109,6 +110,14 @@ class UpdateController extends BaseController{
 		}
     }
     
+    protected function sampleGetImage($id)
+    {
+        $path = "{$this->imagesFolder}/{$id}.*";
+        $images = glob($path);
+
+        if (count($images) == 0) return 'default.png';
+        else return $images[0];
+    }
 
     protected function uploadImage($id)
     {

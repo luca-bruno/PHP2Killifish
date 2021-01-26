@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 23, 2021 at 08:07 PM
+-- Generation Time: Jan 26, 2021 at 01:52 PM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.11
 
@@ -51,7 +51,25 @@ INSERT INTO `comments` (`commentID`, `commentDescription`, `commentCreated_at`, 
 (7, 'dadad', 1611406389, 1611406389, '', 17),
 (8, 'sdvdfsdv', 1611406789, 1611406789, '', 17),
 (9, '31321314215', 1611407625, 1611407625, '', 17),
-(10, 'adasddad', 1611409053, 1611409053, '', 17);
+(10, 'adasddad', 1611409053, 1611409053, '', 17),
+(11, 'yaaaaaaaaas', 1611664162, 1611664162, '', 17),
+(12, 'dfs', 1611664406, 1611664406, '', 17),
+(13, 'dsfsd', 1611664420, 1611664420, '', 17),
+(14, 'fgjhjghk', 1611664478, 1611664478, '', 17),
+(15, 'dsfdsfds', 1611664487, 1611664487, '', 17),
+(16, 'dsadsa', 1611664495, 1611664495, '', 17),
+(17, 'fgjhjghk', 1611664511, 1611664511, '', 17),
+(18, 'dasd', 1611664514, 1611664514, '', 17),
+(19, 'dasd', 1611664546, 1611664546, '', 17),
+(20, 'dsfsdfs', 1611664559, 1611664559, '', 17),
+(21, 'guij', 1611664779, 1611664779, '', 17),
+(22, 'sdfsdgdfg', 1611664789, 1611664789, '', 17),
+(23, 'kjkluhkh', 1611664797, 1611664797, '', 17),
+(24, 'adada', 1611664803, 1611664803, '', 17),
+(25, 'adasfasddsad', 1611664995, 1611664995, '', 17),
+(26, 'whats going on \r\n', 1611665003, 1611665003, '', 17),
+(27, 'cjnbvcn', 1611665115, 1611665115, '', 17),
+(28, '1234', 1611665126, 1611665126, '', 17);
 
 -- --------------------------------------------------------
 
@@ -93,7 +111,15 @@ INSERT INTO `news` (`newsID`, `newsTitle`, `newsDescription`, `newsAuthor`, `new
 (20, '312313131', '31321321313', 17, 1611401329, 1611401329, '312313131'),
 (21, '312313', '123131241215214', 17, 1611401405, 1611401405, '312313'),
 (22, 'again', '1254215236433412', 17, 1611401499, 1611401499, 'again'),
-(23, '312313', '1313133', 17, 1611401607, 1611401607, '312313');
+(23, '312313', '1313133', 17, 1611401607, 1611401607, '312313'),
+(24, 'Work me ', 'rffffffffffffff', 17, 1611663461, 1611663461, 'Work-me'),
+(25, 'My name Jeff', 'My name JeffMy name Jeff', 17, 1611663468, 1611663468, 'My-name-Jeff'),
+(26, 'My name Jeff', 'mynamejeffffff', 17, 1611663567, 1611663567, 'My-name-Jeff'),
+(27, 'Hello Group', 'This is a therapy session', 17, 1611663567, 1611663567, 'Hello-Group'),
+(28, 'Hello Group', 'This is a therapy session', 17, 1611663580, 1611663580, 'Hello-Group'),
+(29, 'Hello Group', 'Intro 2', 17, 1611663592, 1611663592, 'Hello-Group'),
+(30, 'My name Jeff', 'myname jeffffff', 17, 1611663650, 1611663650, 'My-name-Jeff'),
+(31, 'testing', 'pug life', 17, 1611663674, 1611663674, 'testing');
 
 -- --------------------------------------------------------
 
@@ -200,13 +226,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `comments`
 --
 ALTER TABLE `comments`
-  MODIFY `commentID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `commentID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `news`
 --
 ALTER TABLE `news`
-  MODIFY `newsID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `newsID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT for table `posts`

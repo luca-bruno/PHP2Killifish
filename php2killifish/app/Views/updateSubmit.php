@@ -13,7 +13,7 @@
                         <h3 class="text-center">Post Form</h3>
                         <hr>
                     </div>
-                    <form class="w-100" action="updateSubmit" method="post">
+                    <form class="w-100" action="updateSubmit" method="post" enctype="multipart/form-data">
                         <div class="form-group">
                             <label for="newsTitle">Title</label>
                             <input type="text" class="form-control" name="newsTitle" id="newsTitle" value="<?= set_value('newsTitle') ?>">
