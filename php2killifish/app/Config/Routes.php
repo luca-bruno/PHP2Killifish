@@ -39,8 +39,8 @@ $routes->get('updateDisplay/(:any)', 'UpdateController::view/$1');
 $routes->get('postDisplay/(:any)', 'PostController::view/$1');
 
 $routes->match(['get', 'post'], '/login', 'UserController::index');
-$routes->match(['get', 'post',], '/register', 'UserController::register');
-$routes->match(['get', 'post',], '/logout', 'UserController::logout');
+$routes->match(['get', 'post'], '/register', 'UserController::register');
+$routes->match(['get', 'post'], '/logout', 'UserController::logout');
 
 $routes->match(['get', 'post',], '/updateSubmit', 'UpdateController::submit');
 

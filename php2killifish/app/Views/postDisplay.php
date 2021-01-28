@@ -4,7 +4,7 @@
     <div class="container content">
         <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 mt-5 pt-3 pb-3">
             <div class="boxBorder" >
-                <a  href="<?= base_url('/community'); ?>">Back</a>
+                <a class="expandMenuButton" href="<?= base_url('/community'); ?>">Back</a>
                 <br>
                 <img class="imageCenter" alt="Post1" src="https://i.pravatar.cc/150?img=50">
                 
@@ -21,10 +21,10 @@
                         <div class="col-12 col-sm-4">
                             <i class="material-icons">face</i> <?= esc($posts['userScreenName']); ?>
                         </div>
-                        <div class="col-12 col-sm-8 text-right">
-                            <button type="submit" > <i  class="material-icons space">thumb_up</i></button>
-                            <button type="submit" > <i  class="material-icons space">thumb_down</i></button>
-                        </div>
+                        <!-- <div class="col-12 col-sm-8 text-right">
+                            <button type="submit" > <i  class="material-icons">thumb_up</i></button>
+                            <button type="submit" > <i  class="material-icons">thumb_down</i></button>
+                        </div> -->
                     </div>
             </div>
             
@@ -52,9 +52,7 @@
                                     </div>
                             <?php endif; ?>
 
-                            <div class="col-12 text-right">
-                                <button type="submit"> <i  class="material-icons space">arrow_forward</i></button>
-                            </div>
+                                <button class="btn btn-info float-right" type="submit"> <i  class="material-icons submit-arrow">arrow_forward</i></button>
                         </div>
                     </form>
                 </div>
@@ -63,18 +61,16 @@
                 <hr>
                 <!-- Previously posted comments -->
                 <?php if (!empty($comments) && is_array($comments)): ?>
-                        <?php foreach (($comments) as $comment_item): ?>
-                            <?php if ($comment_item['commentParent'] == $posts['postID']): ?>
+                    <?php foreach (($comments) as $comment_item): ?>
+                        <?php if ($comment_item['commentParent'] == $posts['postID']): ?>
                             <div class="row">
                                 <div class="col-12 col-sm-8">
                                     <i class="material-icons">face</i> <?= esc($comment_item['userScreenName']); ?>
                                     <p><?= esc($comment_item['commentDescription']); ?></p>
                                 </div>
                             </div>
-                            <?php endif; ?>
-                        <?php endforeach; ?>
-                    <?php else: ?>
-                        <h3>No Comments</h3>
+                        <?php endif; ?>
+                    <?php endforeach; ?>
                 <?php endif; ?>
             </div>
         </div>

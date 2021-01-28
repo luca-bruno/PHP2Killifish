@@ -41,7 +41,7 @@
                                 </div>
                         <?php endif; ?>
                         
-                        <button type="submit" class="btn btn-primary mt-3">Create Post</button>
+                        <button type="submit" class="btn btn-info mt-3 float-right">Create Post</button>
                         </div>
                     </form>
                 </div>

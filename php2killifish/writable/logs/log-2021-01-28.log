@@ -656,3 +656,88 @@ CRITICAL - 2021-01-28 08:57:33 --> syntax error, unexpected 'endforeach' (T_ENDF
 #4 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #5 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #6 {main}
+CRITICAL - 2021-01-28 10:16:35 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF)
+#0 E:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('postDisplay', Array, true)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\PostController.php(45): view('postDisplay', Array)
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\PostController->view('I-hate-php-I-ha...')
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#4 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-28 10:17:12 --> syntax error, unexpected 'if' (T_IF), expecting ':'
+#0 E:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('postDisplay', Array, true)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\PostController.php(45): view('postDisplay', Array)
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\PostController->view('I-hate-php-I-ha...')
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#4 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-28 10:27:07 --> syntax error, unexpected ')'
+#0 E:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('postDisplay', Array, true)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\PostController.php(45): view('postDisplay', Array)
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\PostController->view('Part-54-of-hati...')
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#4 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-28 11:08:59 --> Undefined variable: post_item
+#0 E:\xampp\htdocs\php2killifish\php2killifish\app\Views\postDisplay.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\xampp\\htdocs...', 57, Array)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\View\View.php(246): include('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('postDisplay', Array, true)
+#3 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\PostController.php(45): view('postDisplay', Array)
+#4 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\PostController->view('Part-54-of-hati...')
+#5 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-28 11:09:03 --> Undefined variable: post_item
+#0 E:\xampp\htdocs\php2killifish\php2killifish\app\Views\postDisplay.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\xampp\\htdocs...', 57, Array)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\View\View.php(246): include('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('postDisplay', Array, true)
+#3 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\PostController.php(45): view('postDisplay', Array)
+#4 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\PostController->view('Part-54-of-hati...')
+#5 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-28 11:09:10 --> Undefined variable: post_item
+#0 E:\xampp\htdocs\php2killifish\php2killifish\app\Views\postDisplay.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\xampp\\htdocs...', 57, Array)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\View\View.php(246): include('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('postDisplay', Array, true)
+#3 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\PostController.php(45): view('postDisplay', Array)
+#4 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\PostController->view('Part-54-of-hati...')
+#5 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-28 11:09:14 --> Undefined variable: post_item
+#0 E:\xampp\htdocs\php2killifish\php2killifish\app\Views\postDisplay.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\xampp\\htdocs...', 57, Array)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\View\View.php(246): include('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('postDisplay', Array, true)
+#3 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\PostController.php(45): view('postDisplay', Array)
+#4 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\PostController->view('Part-54-of-hati...')
+#5 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-28 11:09:37 --> Undefined variable: post_item
+#0 E:\xampp\htdocs\php2killifish\php2killifish\app\Views\postDisplay.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\xampp\\htdocs...', 57, Array)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\View\View.php(246): include('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('postDisplay', Array, true)
+#3 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\PostController.php(45): view('postDisplay', Array)
+#4 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\PostController->view('Part-54-of-hati...')
+#5 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-28 11:36:07 --> unlink(E:\xampp\htdocs\php2killifish\php2killifish\writable\debugbar/debugbar_1611855221.json): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(E:\\xampp...', 'E:\\xampp\\htdocs...', 106, Array)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\Debug\Toolbar\Collectors\History.php(106): unlink('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\Debug\Toolbar.php(483): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles(1611855367, 20)
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#4 E:\xampp\htdocs\php2killifish\php2killifish\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#5 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#6 E:\xampp\htdocs\php2killifish\php2killifish\system\Events\Events.php(188): call_user_func(Object(Closure))
+#7 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#8 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}

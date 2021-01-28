@@ -57,7 +57,7 @@
                     <a class="nav-link greeting">Hello, <?= session()->get('userScreenName') ?>.</a>
                     </li>
                     <li class="nav-item active">
-                    <a class="nav-link" href="logout">Logout</a>
+                    <a class="nav-link" href="<?= base_url('/logout'); ?>">Logout</a>
                     </li>
                 
                 <?php else: ?>

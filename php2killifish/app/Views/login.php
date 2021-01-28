@@ -28,10 +28,10 @@
                         <?php endif; ?>
                     <div class="row">
                         <div class="col-12 col-sm-4">
-                            <button type="submit" class="btn btn-primary">Login</button>
+                            <button type="submit" class="btn btn-info">Login</button>
                         </div>
                         <div class="col-12 col-sm-8 text-right">
-                            <a href="register">Not signed up?</a>
+                            <a class="createPost" href="register">Not signed up?</a>
                         </div>
                     </div>
                 </form>

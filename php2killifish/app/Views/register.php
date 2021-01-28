@@ -61,10 +61,10 @@
 
                         <div class="row">
                             <div class="col-12 col-sm-4">
-                                <button type="submit" class="btn btn-primary">Register</button>
+                                <button type="submit" class="btn btn-info">Register</button>
                             </div>
                             <div class="col-12 col-sm-8 text-right">
-                                <a href="login">Already got an account?</a>
+                                <a class="createPost" href="login">Already got an account?</a>
                             </div>
                         </div>
                     </div>

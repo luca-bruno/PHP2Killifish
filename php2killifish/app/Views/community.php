@@ -22,10 +22,10 @@
                                     <div class="col-12 col-sm-4">
                                         <i class="material-icons">face</i> <?= esc($post_item['userScreenName']); ?>
                                     </div>
-                                    <div class="col-12 col-sm-8 text-right">
-                                        <button type="submit" > <i  class="material-icons space">thumb_up</i></button>
-                                        <button type="submit" > <i  class="material-icons space">thumb_down</i></button>
-                                        <a href="postDisplay/<?= esc($post_item['postSlug'], 'url'); ?>"><button type="submit" > <i  class="material-icons space">message</i></button></a>
+                                    <div class="col-12 col-sm-8">
+                                        <!-- <button type="submit" > <i  class="material-icons">thumb_up</i></button>
+                                        <button type="submit" > <i  class="material-icons">thumb_down</i></button> -->
+                                        <a class="expandMenuButton float-right" href="postDisplay/<?= esc($post_item['postSlug'], 'url'); ?>"><i  class="material-icons">message</i></a>
                                     </div>
                                 </div>
                         </div>
