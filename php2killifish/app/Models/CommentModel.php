@@ -25,7 +25,7 @@ class CommentModel extends Model{
     protected $allowedFields    = [
                                     'commentDescription',
                                     'commentAuthor',
-                                    'commentSlug'
+                                    'commentParent'
                                 ];
     
     # All activity will be recorded as timestamps.
@@ -41,17 +41,15 @@ class CommentModel extends Model{
     /**
      *  Gets the comments items from the table.
      */
-    function getComments($commentSlug = false)
+    function getComments()
     {
         $builder = $this->db->table('comments');
 
         $builder->select('comments.*, users.userScreenName')
                     ->join('users', 'comments.commentAuthor = users.userID', 'left');
-
-        if ($commentSlug !== false)
-        {
-            $builder->where('commentSlug', $commentSlug); //error is returning first record without a slug
-        }
+        
+        $builder->select('comments.*')
+                    ->join('posts', 'comments.commentParent = posts.postID', 'left');
 
         $result = $builder->get()->getResultArray();
         return count($result) == 1 ? $result[0] : $result;

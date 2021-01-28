@@ -3,10 +3,12 @@
     <div class="container content">
         <div class="row mb-5"> 
             <div class="col-12 col-sm-8 offset-sm-2 col-md-8 mt-5 pt-3 pb-3">
+            <?php if (isset($_SESSION['userScreenName'])): ?>    
                 <div class="middleButton boxBorder createPost">
                     <a class="expandMenuButton" href="postSubmit">
                     <i class="material-icons">add_circle_outline</i>Create A Post</a>
                 </div>
+                <?php endif; ?>
                 <br>
 
                 <?php if (!empty($posts) && is_array($posts)): ?>
@@ -28,11 +30,11 @@
                                 </div>
                         </div>
                         <br>
-                    <?php endforeach; ?>
-                    <?php else: ?>
-                        <h3>No News</h3>
-                        <p>Unable to find any news for you.</p>
-            <?php endif; ?>
+                        <?php endforeach; ?>
+                        <?php else: ?>
+                            <h3>No News</h3>
+                            <p>Unable to find any news for you.</p>
+                <?php endif; ?>
             </div>
         </div>
     </div>    

@@ -5,8 +5,8 @@
                     &copy; 2021 &bull; Endemic
                 </div>
                 <div class="text-center text-lg-right col-12 col-lg-6 order-lg-1 my-3 my-lg-0">
-                    <a href="https://www.mcast.edu.mt/"><img class="mcast-image" alt="MCAST logo" src="<?php echo base_url('assets/resources/mcastLogo.png'); ?>"></a>
-                    <a href="https://naturetrustmalta.org/"><img class="ngo-image" alt="Nature Trust logo" src="<?php echo base_url('assets/resources/natureTrustLogo.png'); ?>"></a>
+                    <a href="https://www.mcast.edu.mt/" target="_blank"><img class="mcast-image" alt="MCAST logo" src="<?php echo base_url('assets/resources/mcastLogo.png'); ?>"></a>
+                    <a href="https://naturetrustmalta.org/" target="_blank"><img class="ngo-image" alt="Nature Trust logo" src="<?php echo base_url('assets/resources/natureTrustLogo.png'); ?>"></a>
                 </div>     
             </div>
         </div>

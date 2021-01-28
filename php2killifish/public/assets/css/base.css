@@ -22,6 +22,11 @@ body {
     flex-shrink: 0;
 }
 
+.home-title{
+    font-family: 'Irish Grover', sans-serif !important;
+    color:#C1f6ED;
+}
+
 /* box border for drop shadow and outline*/
 .boxBorderAbout
 {

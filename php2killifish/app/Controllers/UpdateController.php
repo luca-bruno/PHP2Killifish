@@ -24,6 +24,7 @@ class UpdateController extends BaseController{
     function view($newsSlug = NULL){
 
         $model = new UpdateModel();
+        helper(['form']);
 
         $data['news'] = $model->getNews($newsSlug);
         

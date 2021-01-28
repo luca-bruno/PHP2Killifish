@@ -7,6 +7,13 @@
                 <a  href="<?= base_url('/community'); ?>">Back</a>
                 <br>
                 <img class="imageCenter" alt="Post1" src="https://i.pravatar.cc/150?img=50">
+                
+                <?php
+                    foreach(glob('uploads/posts/*', GLOB_NOSORT) as $image)  {
+                        echo '<img class="imageCenter" src="'.$image.'">';
+                    } ?>
+                    <!-- TO FIX, output only with relevant to PostID + displaying broken images -->
+
                     <h3 ><?= esc($posts['postTitle']); ?></h3>
                     <p><?= esc($posts['postDescription']); ?></p>
                     <hr>
@@ -20,9 +27,11 @@
                         </div>
                     </div>
             </div>
-
+            
+            
             <div class="boxBorder" >
                 <!--  New comment input -->
+                <?php if (isset($_SESSION['userScreenName'])): ?>
                 <div class="row">
                     <form class="w-100" action="<?= base_url('/postDisplay') ?>" method="post">
                         <div class="col-12">
@@ -49,18 +58,24 @@
                         </div>
                     </form>
                 </div>
+                <?php endif; ?>
+
                 <hr>
                 <!-- Previously posted comments -->
-                <div class="row">
-                        <div class="col-12 col-sm-8">
-                            <i class="material-icons">face</i> User2:
-                            <p>Some text that describes me lorem ipsum ipsum lorem.Some text that describes me lorem ipsum ipsum lorem.</p>
-                        </div>
-                        <div class="col-12 col-sm-4 text-right">
-                            <button type="submit" > <i  class="material-icons space">thumb_up</i></button>
-                            <button type="submit" > <i  class="material-icons space">thumb_down</i></button>
-                        </div>
-                    </div>
+                <?php if (!empty($comments) && is_array($comments)): ?>
+                        <?php foreach (($comments) as $comment_item): ?>
+                            <?php if ($comment_item['commentParent'] == $posts['postID']): ?>
+                            <div class="row">
+                                <div class="col-12 col-sm-8">
+                                    <i class="material-icons">face</i> <?= esc($comment_item['userScreenName']); ?>
+                                    <p><?= esc($comment_item['commentDescription']); ?></p>
+                                </div>
+                            </div>
+                            <?php endif; ?>
+                        <?php endforeach; ?>
+                    <?php else: ?>
+                        <h3>No Comments</h3>
+                <?php endif; ?>
             </div>
         </div>
     </div>    
