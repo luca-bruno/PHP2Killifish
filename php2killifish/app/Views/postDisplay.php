@@ -1,31 +1,39 @@
-
 <body>
     <!-- Post -->
     <div class="container content">
-        <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 mt-5 pt-3 pb-3">
-            <div class="boxBorder" >
-                <a class="expandMenuButton" href="<?= base_url('/community'); ?>">Back</a>
-                <br>
-                <img class="imageCenter" alt="Post1" src="https://i.pravatar.cc/150?img=50">
-                
-                <?php
-                    foreach(glob('uploads/posts/*', GLOB_NOSORT) as $image)  {
-                        echo '<img class="imageCenter" src="'.$image.'">';
-                    } ?>
-                    <!-- TO FIX, output only with relevant to PostID + displaying broken images -->
+        <div class="col-12 col-sm-8 offset-sm-2 col-md-8 mt-5 pt-3 pb-3">
 
-                    <h3 ><?= esc($posts['postTitle']); ?></h3>
-                    <p><?= esc($posts['postDescription']); ?></p>
-                    <hr>
-                    <div class="row">
-                        <div class="col-12 col-sm-4">
-                            <i class="material-icons">face</i> <?= esc($posts['userScreenName']); ?>
-                        </div>
-                        <!-- <div class="col-12 col-sm-8 text-right">
-                            <button type="submit" > <i  class="material-icons">thumb_up</i></button>
-                            <button type="submit" > <i  class="material-icons">thumb_down</i></button>
-                        </div> -->
+            <a class="expandMenuButton p-3" href="<?= base_url('/community'); ?>">Back</a>   
+            
+            <div class="boxBorderPost">
+                <?php
+                // match filename of image path to postID
+                    $id = esc($posts['postID']);
+                    foreach(glob("uploads/posts/{$id}.*", GLOB_NOSORT) as $image)  {
+                        $image_path = base_url('') . '/' . $image; 
+                        echo '<img class="postImage" src="' . $image_path . '">';
+                    }
+                ?>
+
+                <h3 class="px-3 pt-3"><?= esc($posts['postTitle']); ?></h3>
+                <p class="px-3"><?= esc($posts['postDescription']); ?></p>
+                <hr>
+                <div class="row">
+                    <div class="col-12 col-sm-4 ">
+                    <?php
+                        $id = esc($posts['postAuthor']);
+                        foreach(glob("uploads/avatars/{$id}.*", GLOB_NOSORT) as $image)  {
+                            $image_path = base_url('') . '/' . $image; 
+                            echo '<img class="avatar ml-3 mr-2" src="' . $image_path . '">';
+                    }
+                    ?> 
+                        <strong><?= esc($posts['userScreenName']); ?></strong>
                     </div>
+                    <!-- <div class="col-12 col-sm-8 text-right">
+                        <button type="submit" > <i  class="material-icons">thumb_up</i></button>
+                        <button type="submit" > <i  class="material-icons">thumb_down</i></button>
+                    </div> -->
+                </div>
             </div>
             
             
@@ -37,8 +45,8 @@
                         <div class="col-12">
                             <!-- <i class="material-icons">face</i> User_logedIn -->
 
-                            <div class="form-group">
-                                <label for="commentDescription">Comment</label>
+                            <div class="form-group px-3 pt-3">
+                                <label for="commentDescription">Comments</label>
                                 <textarea type="text" class="form-control" name="commentDescription" id="commentDescription" ></textarea>
                                 <input type="hidden" name="parent-post-id" value="<?= esc($posts['postID']); ?>">
                             </div>
@@ -52,7 +60,9 @@
                                     </div>
                             <?php endif; ?>
 
-                                <button class="btn btn-info float-right" type="submit"> <i  class="material-icons submit-arrow">arrow_forward</i></button>
+                            <div class="pr-3">
+                                <button class="btn btn-info float-right " type="submit"> <i  class="material-icons submit-arrow ">arrow_forward</i></button>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -65,8 +75,17 @@
                         <?php if ($comment_item['commentParent'] == $posts['postID']): ?>
                             <div class="row">
                                 <div class="col-12 col-sm-8">
-                                    <i class="material-icons">face</i> <?= esc($comment_item['userScreenName']); ?>
-                                    <p><?= esc($comment_item['commentDescription']); ?></p>
+                                    <?php
+                                        $id = esc($comment_item['commentAuthor']);
+                                        foreach(glob("uploads/avatars/{$id}.*", GLOB_NOSORT) as $image)  {
+                                            $image_path = base_url('') . '/' . $image; 
+                                            echo '<img class="avatar ml-3 mr-2" src="' . $image_path . '">';
+                                        }
+                                    ?> 
+                                
+                                    <strong> <?= esc($comment_item['userScreenName']); ?> </strong>
+                                    <p class="ml-3 mt-3"><?= esc($comment_item['commentDescription']); ?></p>
+                                    <br>
                                 </div>
                             </div>
                         <?php endif; ?>

@@ -1,14 +1,20 @@
 <body>
     <div class="container content">
         <div class="mt-5 pt-1 pb-5">
-            <div class="boxBorder">
-                <a class="expandMenuButton" href="<?= base_url('/updates'); ?>">Back</a>
-                <br>
-                <img class="imageCenter" alt="Latest Update" src="https://i.pravatar.cc/150?img=50">
-                <h2 class="text-center"> <?= esc($news['newsTitle']); ?></h2>
-                <h6 class="text-center"> <?= esc($news['userFirstName']); ?> <?= esc($news['userLastName']); ?> (<?= esc($news['userScreenName']); ?>)</h6>
+                <a class="expandMenuButton pl-2" href="<?= base_url('/updates'); ?>">Back</a>
+            <div class="boxBorderPost">
+                <?php
+                // match filename of image path to newsID
+                    $id = esc($news['newsID']);
+                    foreach(glob("uploads/updates/{$id}.*", GLOB_NOSORT) as $image)  {
+                        $image_path = base_url('') . '/' . $image; 
+                        echo '<img class="postImage" src="' . $image_path . '">';
+                    }
+                ?>
+                <h2 class="text-center px-3 pt-3"> <?= esc($news['newsTitle']); ?></h2>
+                <h6 class="text-center pt-1">by <strong>Mod <?= esc($news['userFirstName']); ?> </strong> (<strong><?= esc($news['userScreenName']); ?></strong>)</h6>
                 <hr>
-                <p class="text-center"><?= esc($news['newsDescription']); ?>
+                <p class="text-justify px-3 pt-3"><?= esc($news['newsDescription']); ?>
                 </p>
             </div>
         </div>

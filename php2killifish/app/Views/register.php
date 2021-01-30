@@ -4,7 +4,7 @@
             <div class="container boxBorder">
                 <h3>Register</h3>
                 <hr>
-                <form class="" action="register" method="post">
+                <form class="" action="register" method="post" enctype="multipart/form-data">
                     <div class="row">
                         <div class="col-12 col-sm-6">
                             <div class="form-group">
@@ -23,6 +23,12 @@
                             <div class="form-group">
                                 <label for="userScreenName">Username</label>
                                 <input type="text" class="form-control" name="userScreenName" id="userScreenName" value="<?= set_value('userScreenName') ?>">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 mt-4 pt-2">
+                            <div class="custom-file">
+                                <label for="image" class="custom-file-label">Upload avatar</label>
+                                <input type="file" class="custom-file-input" name="image" id="image">
                             </div>
                         </div>
                         <div class="col-12">

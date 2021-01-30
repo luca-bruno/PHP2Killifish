@@ -1,9 +1,11 @@
 <?php namespace App\Controllers;
 
 use App\Models\UserModel;
+use CodeIgniter\Controller;
 
 class UserController extends BaseController{
     
+    protected $imagesFolder = 'uploads/avatars';
 
     // http://localhost/php2killifish/php2killifish/public/login
     public function index(){ //login page
@@ -65,11 +67,11 @@ class UserController extends BaseController{
                 'userFirstName'             => 'required|min_length[3]|max_length[255]',
                 'userLastName'              => 'required|min_length[3]|max_length[255]',
                 'userScreenName'            => 'required|min_length[3]|max_length[255]|is_unique[users.userScreenName]',
-                // 'userAvatar'                => 'max_size[image,4096]|is_image[image]|ext_in[image,jpg,jpeg,gif,png]',
                 'userEmail'                 => 'required|min_length[3]|max_length[255]|valid_email|is_unique[users.userEmail]', //in built CI email format validation + database validation
                 'userEmail_confirm'         => 'matches[userEmail]',
                 'userPassword'              => 'required|min_length[8]|max_length[255]',
                 'userPassword_confirm'      => 'matches[userPassword]',
+                'image'                     => 'max_size[image,7168]|is_image[image]|ext_in[image,jpg,jpeg,gif,png]'
             ];
 
             if (! $this->validate($rules)){ //if form is not valid
@@ -86,6 +88,8 @@ class UserController extends BaseController{
                     'userPassword' => $this->request->getVar('userPassword'),
                 ];  //send our data to model
                 $model->save($newData); //save it
+                $id = $model->getInsertID();
+                $this->uploadImage($id);
                 $session = session(); //create session
                 $session->setFlashdata('success', 'Successful Registration'); //displays success dialog as flashdata (session data that will only be available for the next request)
                 return redirect()->to('login'); //return user to login page
@@ -103,6 +107,72 @@ class UserController extends BaseController{
         session()->destroy(); //destroys current session
         return redirect()->to('home'); //redirects user to home page
 
+    }
+
+    /**
+	 * Checks that a folder exists in the path, and will create one if not.
+	 */
+	protected function checkFolder($path)
+	{
+		// Split the path into folders.
+		$folders = explode('/', $path);
+
+		// Set the first folder for use.
+		$folder = reset($folders);
+
+		// Clear the path so it can be built one step at a time.
+		$path = $folder;
+
+		while ($folder != null)
+		{
+			// skip the loop if the folder is already there.
+			if (!file_exists($path) || !is_dir($path))
+			{
+				// create the folder.
+				mkdir($path);
+				
+				// sets the permissions so the folder can be deleted manually.
+				// chmod($path, 0777);
+			}
+
+			// move to the next folder and build the next path.
+			$folder = next($folders);
+			$path .= "/{$folder}";
+		}
+    }
+    
+    protected function sampleGetImage($id) //default avatar if one is not set
+    {
+        $path = "{$this->imagesFolder}/{$id}.*";
+        $images = glob($path);
+
+        if (count($images) == 0) return 'default.png';
+        else return $images[0];
+    }
+
+    protected function uploadImage($id)
+    {
+        $image = $this->request->getFile('image');
+
+        if ($image->getName() != '')
+        {
+            // Generate a new name for this file.
+            $newName = "{$id}.{$image->getClientExtension()}";
+
+            // Make sure the folder exists.
+            $this->checkFolder($this->imagesFolder);
+
+            // Delete other images with the same ID.
+            $path = "{$this->imagesFolder}/{$id}.*";
+            $images = glob($path);
+
+            // Loop through all the items and delete the file(s).
+            foreach ($images as $file)
+                unlink($file);
+
+            // Move the image to the new folder using a new name.
+            $image->move($this->imagesFolder, $newName);
+        }
     }
 }
 ?>

@@ -54,7 +54,7 @@ class PostController extends BaseController{
             $rules = [
                 'postTitle'                   => 'required|min_length[3]|max_length[600]',
                 'postDescription'             => 'required|min_length[3]|max_length[1000]',
-                'image'                       => 'max_size[image,4096]|is_image[image]|ext_in[image,jpg,jpeg,gif,png]'
+                'image'                       => 'max_size[image,7168]|is_image[image]|ext_in[image,jpg,jpeg,gif,png]'
             ];
             
             if (! $this->validate($rules)){ //if form is not valid
@@ -127,7 +127,7 @@ class PostController extends BaseController{
     protected function uploadImage($id)
     {
         $image = $this->request->getFile('image');
-
+        
         if ($image->getName() != '')
         {
             // Generate a new name for this file.

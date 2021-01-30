@@ -36,6 +36,14 @@ body {
     line-height: 2.5rem;
 }
 
+.boxBorder
+{
+    box-shadow: 0 4px 8px 0 #02353C;
+    background-color: rgb(149, 219, 229, 0.75);
+    padding: 10px;
+    margin-top: 0.5rem;
+}
+
 /* box border for drop shadow and outline*/
 .boxBorderAbout
 {
@@ -45,12 +53,12 @@ body {
     
 }
 
-.boxBorder
+.boxBorderPost
 {
     box-shadow: 0 4px 8px 0 #02353C;
     background-color: rgb(149, 219, 229, 0.75);
-    padding: 10px;
     margin-top: 0.5rem;
+    padding: 0px 0px 20px 0px;
 }
 
 
@@ -78,10 +86,6 @@ hr {
     padding-right: 0px;
 }
 
-.login-reg-btns{
-    color: #C1f6ED;
-}
-
 /* images stays on the right*/
 .imageRight
 {
@@ -91,6 +95,10 @@ hr {
     width: 180px;
 }
 
+.avatar {
+    width: 70px;
+    height: 70px;
+}
 
 .vertical-center {
     display: flex;
@@ -114,7 +122,15 @@ hr {
 {
     margin: 5px;
     display: block;
-    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.postImage
+{
+    margin: 5px;
+    display: block;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -141,11 +157,11 @@ hr {
 }
 
 .createPost{
-    color: #C1f6ED !important;
+    color: #C1f6ED;
 }
 
 .createPost:hover{
-    color: #02353C !important;
+    color: #02353C;
 }
 
 /* images does not go outside the boder*/
