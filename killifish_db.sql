@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 30, 2021 at 05:19 PM
+-- Generation Time: Jan 31, 2021 at 04:49 PM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.11
 
@@ -56,7 +56,8 @@ INSERT INTO `comments` (`commentID`, `commentDescription`, `commentCreated_at`, 
 (15, 'show me the money\r\n', 1612022552, 1612022552, 12, 24),
 (16, 'where the money', 1612022563, 1612022563, 12, 24),
 (17, 'sdfgdsfgfg', 1612022595, 1612022595, 9, 23),
-(18, 'hi sucker ', 1612022613, 1612022613, 12, 23);
+(18, 'hi sucker ', 1612022613, 1612022613, 12, 23),
+(19, 'i like this audi very much!!!', 1612045558, 1612045558, 12, 20);
 
 -- --------------------------------------------------------
 
@@ -237,7 +238,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `comments`
 --
 ALTER TABLE `comments`
-  MODIFY `commentID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `commentID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `news`

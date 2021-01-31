@@ -77,10 +77,17 @@
                                 <div class="col-12 col-sm-8">
                                     <?php
                                         $id = esc($comment_item['commentAuthor']);
+
+                                        $image_defaultpath = base_url('') . '/' . 'uploads/avatars/default.png'; 
+                                        $image_path = NULL;
                                         foreach(glob("uploads/avatars/{$id}.*", GLOB_NOSORT) as $image)  {
                                             $image_path = base_url('') . '/' . $image; 
-                                            echo '<img class="avatar ml-3 mr-2" src="' . $image_path . '">';
                                         }
+                                            if($image_path != NULL){
+                                                echo '<img class="avatar ml-3 mr-2" src="' . $image_path . '">';
+                                            } else {
+                                                echo '<img class="avatar ml-3 mr-2" src="' . $image_defaultpath . '">';
+                                            }
                                     ?> 
                                 
                                     <strong> <?= esc($comment_item['userScreenName']); ?> </strong>

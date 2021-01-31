@@ -30,16 +30,18 @@
                                 <div class="col-12 col-sm-8 pl-3">
                                 <?php
                                     $id = esc($post_item['postAuthor']);
-                                    // $defaultpath = 
+                                    
+                                    $image_defaultpath = base_url('') . '/' . 'uploads/avatars/default.png'; 
+                                    $image_path = NULL;
                                     foreach(glob("uploads/avatars/{$id}.*", GLOB_NOSORT) as $image)  {
-                                        $image_defaultpath = base_url('') . '/' . 'uploads/avatars/default.png'; 
-                                        $image_path = base_url('') . '/' . $image; 
-                                        if(file_exists($image_path) ){
-                                            echo '<img class="avatar ml-3 mr-2" src="' . $image_path . '">';
-                                        } else {
-                                            echo '<img class="avatar ml-3 mr-2" src="' . $image_defaultpath . '">';
+                                            $image_path = base_url('') . '/' . $image; 
                                         }
-                                    }
+                                            if($image_path != NULL){
+                                                echo '<img class="avatar ml-3 mr-2" src="' . $image_path . '">';
+                                            } else {
+                                                echo '<img class="avatar ml-3 mr-2" src="' . $image_defaultpath . '">';
+                                            }
+                                    
                                 // else if id == empty
                                 ?> 
                                     <strong><?= esc($post_item['userScreenName']); ?></strong>
