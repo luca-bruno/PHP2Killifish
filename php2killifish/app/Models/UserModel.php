@@ -16,10 +16,6 @@ class UserModel extends Model{
     # What kind of data a query will return.
     protected $returnType       = 'array';
 
-    // # This makes sure the controller will never delete a field.
-    // protected $useSoftDeletes   = true;
-        // had to comment this out due to "Unknown column 'users.deleted_at' in 'where clause' search" error post-login
-
     # These are the fields/columns that can be edited by the user.
     # Anything else will be taken care of by CodeIgniter.
     protected $allowedFields    = [

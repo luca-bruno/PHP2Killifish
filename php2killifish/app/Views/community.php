@@ -56,8 +56,8 @@
                         <br>
                         <?php endforeach; ?>
                         <?php else: ?>
-                            <h3>No News</h3>
-                            <p>Unable to find any news for you.</p>
+                            <h3>No Community Posts</h3>
+                            <p>Unable to find any community posts.</p>
                 <?php endif; ?>
             </div>
         </div>

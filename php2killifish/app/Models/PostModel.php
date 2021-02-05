@@ -16,9 +16,6 @@ class PostModel extends Model{
     # What kind of data a query will return.
     protected $returnType       = 'array';
 
-    // # This makes sure the controller will never delete a field.
-    // protected $useSoftDeletes   = true;
-
     # These are the fields/columns that can be edited by the user when creating a post.
     # Anything else will be taken care of by CodeIgniter.
     protected $allowedFields    = [

@@ -22,10 +22,17 @@
                     <div class="col-12 col-sm-4 ">
                     <?php
                         $id = esc($posts['postAuthor']);
+                        
+                        $image_defaultpath = base_url('') . '/' . 'uploads/avatars/default.png'; 
+                        $image_path = NULL;
                         foreach(glob("uploads/avatars/{$id}.*", GLOB_NOSORT) as $image)  {
                             $image_path = base_url('') . '/' . $image; 
-                            echo '<img class="avatar ml-3 mr-2" src="' . $image_path . '">';
-                    }
+                        }
+                            if($image_path != NULL){
+                                echo '<img class="avatar ml-3 mr-2" src="' . $image_path . '">';
+                            } else {
+                                echo '<img class="avatar ml-3 mr-2" src="' . $image_defaultpath . '">';
+                            }
                     ?> 
                         <strong><?= esc($posts['userScreenName']); ?></strong>
                     </div>
@@ -43,7 +50,6 @@
                 <div class="row">
                     <form class="w-100" action="<?= base_url('/postDisplay') ?>" method="post">
                         <div class="col-12">
-                            <!-- <i class="material-icons">face</i> User_logedIn -->
 
                             <div class="form-group px-3 pt-3">
                                 <label for="commentDescription">Comments</label>

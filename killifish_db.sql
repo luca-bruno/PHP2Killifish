@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 31, 2021 at 04:49 PM
+-- Generation Time: Feb 05, 2021 at 01:36 PM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.11
 
@@ -57,7 +57,8 @@ INSERT INTO `comments` (`commentID`, `commentDescription`, `commentCreated_at`, 
 (16, 'where the money', 1612022563, 1612022563, 12, 24),
 (17, 'sdfgdsfgfg', 1612022595, 1612022595, 9, 23),
 (18, 'hi sucker ', 1612022613, 1612022613, 12, 23),
-(19, 'i like this audi very much!!!', 1612045558, 1612045558, 12, 20);
+(19, 'i like this audi very much!!!', 1612045558, 1612045558, 12, 20),
+(20, 'moneeyyyeye', 1612527744, 1612527744, 12, 17);
 
 -- --------------------------------------------------------
 
@@ -68,7 +69,7 @@ INSERT INTO `comments` (`commentID`, `commentDescription`, `commentCreated_at`, 
 CREATE TABLE `news` (
   `newsID` int(10) UNSIGNED NOT NULL,
   `newsTitle` varchar(600) NOT NULL,
-  `newsDescription` varchar(1000) NOT NULL,
+  `newsDescription` varchar(3000) NOT NULL,
   `newsAuthor` int(10) UNSIGNED NOT NULL,
   `newsCreated_at` int(10) DEFAULT NULL,
   `newsUpdated_at` int(10) UNSIGNED DEFAULT NULL,
@@ -116,7 +117,9 @@ INSERT INTO `news` (`newsID`, `newsTitle`, `newsDescription`, `newsAuthor`, `new
 (37, 'pug is for life', 'pugpugpugpugpugpugpugpug', 17, 1612014979, 1612014979, 'pug-is-for-life'),
 (38, 'My name Jeff TODAY', 'otday today', 17, 1612014995, 1612014995, 'My-name-Jeff-TODAY'),
 (39, 'png test', 'png testttt', 17, 1612015115, 1612015115, 'png-test'),
-(40, 'patrick', 'dddd', 17, 1612015230, 1612015230, 'patrick');
+(40, 'patrick', 'dddd', 17, 1612015230, 1612015230, 'patrick'),
+(41, 'Project to conserve Malta’s endemic killifish', 'A project has been launched to conserve the Maltese killifish (Aphanius fasciatus – bużaqq), a small fish endemic to the Mediterranean. It is found mainly along the central to the eastern coastlines of the Medi­terranean Sea and around is­lands like as Sicily, Corsica and Malta.\r\n\r\nRay Caruana from the Malta Aquaculture Research Centre said that up to a few years ago, the killifish was found in Il-Magħluq, Marsascala and Il-Ballut, Marsa­xlokk. But anthropogenic activity has led to a heavy decline in the stocks at both sites, with the population at Il-Magħluq being wiped out.\r\n\r\nIn the 1990s, Nature Trust Malta volunteers took a small population from Il-Ballut and succeeded to restart the population at Il-Magħluq. But conditions at Il-Ballut did not improve and the Marsaxlokk population faces extinction. The habitat of Il-Magħluq is also poor with many negative pressures, including dumping and pollution, which has led to the decline in numbers of the killifish in this area too.', 17, 1612527327, 1612527327, 'Project-to-conserve-Maltas-endemic-killifish'),
+(42, 'fish', 'A project has been launched to conserve the Maltese killifish (Aphanius fasciatus – bużaqq), a small fish endemic to the Mediterranean. It is found mainly along the central to the eastern coastlines of the Medi­terranean Sea and around is­lands like as Sicily, Corsica and Malta.\r\n\r\nRay Caruana from the Malta Aquaculture Research Centre said that up to a few years ago, the killifish was found in Il-Magħluq, Marsascala and Il-Ballut, Marsa­xlokk. But anthropogenic activity has led to a heavy decline in the stocks at both sites, with the population at Il-Magħluq being wiped out.\r\n\r\nIn the 1990s, Nature Trust Malta volunteers took a small population from Il-Ballut and succeeded to restart the population at Il-Magħluq. But conditions at Il-Ballut did not improve and the Marsaxlokk population faces extinction. The habitat of Il-Magħluq is also poor with many negative pressures, including dumping and pollution, which has led to the decline in numbers of the killifish in this area too.\r\n\r\n\r\n\r\n\r\n\r\nNature Trust Malta executive president Vincent Attard said genetic tests have shown that the local Maltese killifish population is unique. But it is endangered and in urgent need of proper management by competent institutions to prevent the degradation of its habitat that is negatively affecting the species.\r\n\r\nThe project aims to raise awareness and educate the public about the importance of preserving the species and its habitat. It includes captive-breeding programmes and securing a viable population in captivity as well as the effective and sustainable management of the Natura 2000 site at Il-Magħluq.\r\n\r\nThe project was launched by Nature Trust Malta and the Malta Aquaculture Research Centre of the Department of Fisheries and Aquaculture, with the support of Bank of Valletta, the Environment Ministry and the Malta Environment and Planning Authority. For details visit the Killifish Conservation Project Malta Facebook page.', 17, 1612527542, 1612527542, 'fish');
 
 -- --------------------------------------------------------
 
@@ -127,7 +130,7 @@ INSERT INTO `news` (`newsID`, `newsTitle`, `newsDescription`, `newsAuthor`, `new
 CREATE TABLE `posts` (
   `postID` int(10) UNSIGNED NOT NULL,
   `postTitle` varchar(600) NOT NULL,
-  `postDescription` varchar(1000) NOT NULL,
+  `postDescription` varchar(2000) NOT NULL,
   `postCreated_at` int(10) DEFAULT NULL,
   `postUpdated_at` int(10) UNSIGNED DEFAULT NULL,
   `postSlug` varchar(600) NOT NULL,
@@ -150,7 +153,9 @@ INSERT INTO `posts` (`postID`, `postTitle`, `postDescription`, `postCreated_at`,
 (9, 'testuser', 'testing user image', 1612017829, 1612017829, 'testuser', 23),
 (10, 'hello i m newwwww', 'hiiiiiiiiiiii', 1612017859, 1612017859, 'hello-i-m-newwwww', 25),
 (11, 'killi', 'killi killi ', 1612018612, 1612018612, 'killi', 24),
-(12, 'blalalallalalalasalcfcsaasv', 'cvaxvsgbsdbbdsvsdfb', 1612021732, 1612021732, 'blalalallalalalasalcfcsaasv', 26);
+(12, 'blalalallalalalasalcfcsaasv', 'cvaxvsgbsdbbdsvsdfb', 1612021732, 1612021732, 'blalalallalalalasalcfcsaasv', 26),
+(13, 'killi', 'A project has been launched to conserve the Maltese killifish (Aphanius fasciatus – bużaqq), a small fish endemic to the Mediterranean. It is found mainly along the central to the eastern coastlines of the Medi­terranean Sea and around is­lands like as Sicily, Corsica and Malta.\r\n\r\nRay Caruana from the Malta Aquaculture Research Centre said that up to a few years ago, the killifish was found in Il-Magħluq, Marsascala and Il-Ballut, Marsa­xlokk. But anthropogenic activity has led to a heavy decline in the stocks at both sites, with the population at Il-Magħluq being wiped out.\r\n\r\nIn the 1990s, Nature Trust Malta volunteers took a small population from Il-Ballut and succeeded to restart the population at Il-Magħluq. But conditions at Il-Ballut did not improve and the Marsaxlokk population faces extinction. The habitat of Il-Magħluq is also poor with many negative pressures, including dumping and pollution, which has led to the decline in numbers of the killifish in this area too.\r\n\r\nNature Trust Malta executive president Vincent Attard said genetic tests have shown that the local Maltese killifish population is unique. But it is endangered and in urgent need of proper management by competent institutions to prevent the degradation of its habitat that is negatively affecting the species.\r\n\r\nThe project aims to raise awareness and educate the public about the importance of preserving the species and its habitat. It includes captive-breeding programmes and securing a viable population in captivity as well as the effective and sustainable management of the Natura 2000 site at Il-Magħluq.\r\n\r\nThe project was launched by Nature Trust Malta and the Malta Aquaculture Research Centre of the Department of Fisheries and Aquaculture, with the support of Bank of Valletta, the Environment Ministry and the Malta Environment and Planning Authority. For details visit the Killifish Conservation Project Malta Facebook page.', 1612527580, 1612527580, 'killi', 17),
+(14, 'we all gonna die', 'die die die die die', 1612527802, 1612527802, 'we-all-gonna-die', 28);
 
 -- --------------------------------------------------------
 
@@ -196,7 +201,9 @@ INSERT INTO `users` (`userID`, `userFirstName`, `userLastName`, `userScreenName`
 (23, 'aaron', 'sammut', 'testaaron', 'aaronsammut6@gmail.com', '$2y$10$jc91I/QoyQ1/RL4i7YerMuF/BJYs/7bxhm1IoXtSfQJgPCXYy3PIO', 1612017704, 1612017704, 0),
 (24, 'Ian', 'Mallia', 'MalliaXD', 'ian.mallia@hotmail.com', '$2y$10$CxQousbJtK7GDKmdDbxtVuzD7SPcII5KULQ54pKUbjT4K0XOMRgHi', 1612017721, 1612017721, 0),
 (25, 'Theodore', 'Price', 'testo', 'bipoc@mailinator.com', '$2y$10$vHGblMvkStyKxZx5dC4ptuXdJFOJZYx.mFnJNIWqlRLtYt2Aud9.e', 1612017838, 1612017838, 0),
-(26, 'Norman', 'Becker', 'testaaa', 'xomugefiv@mailinator.com', '$2y$10$xW8WIno54IWgnc5yO5tDM.ECLfPD5GnDCcq5LwNGRARjl6eSYmb6i', 1612021703, 1612021703, 0);
+(26, 'Norman', 'Becker', 'testaaa', 'xomugefiv@mailinator.com', '$2y$10$xW8WIno54IWgnc5yO5tDM.ECLfPD5GnDCcq5LwNGRARjl6eSYmb6i', 1612021703, 1612021703, 0),
+(27, 'Jin', 'Goff', 'ryfihuf', 'suzyvure@mailinator.com', '$2y$10$NelfnO4ah2jwZD8wFtZ5eeLLPFBGlIHjClXbbtbX4YkRXBDf3tIry', 1612527513, 1612527513, 0),
+(28, 'killifishRIP', 'ismyname', 'testfish', 'aaronstmut6@gmail.com', '$2y$10$QNkphEFSmv2/JGF5Qlle/.0KRu2tydTwrMOWqCtJHAwoi9RqUYEtm', 1612527653, 1612527653, 0);
 
 --
 -- Indexes for dumped tables
@@ -238,25 +245,25 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `comments`
 --
 ALTER TABLE `comments`
-  MODIFY `commentID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `commentID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `news`
 --
 ALTER TABLE `news`
-  MODIFY `newsID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `newsID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `postID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `postID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `userID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `userID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- Constraints for dumped tables

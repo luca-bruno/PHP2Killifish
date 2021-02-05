@@ -48,7 +48,7 @@ class UpdateController extends BaseController{
         if ($this->request->getMethod() == 'post'){ //built-in CI4 validation rules for admin creating new post
             $rules = [
                 'newsTitle'                   => 'required|min_length[3]|max_length[600]',
-                'newsDescription'             => 'required|min_length[3]|max_length[1000]',
+                'newsDescription'             => 'required|min_length[3]|max_length[3000]',
                 'image'                       => 'max_size[image,7168]|is_image[image]|ext_in[image,jpg,jpeg,gif,png]'
             ];
             
@@ -100,24 +100,12 @@ class UpdateController extends BaseController{
 			{
 				// create the folder.
 				mkdir($path);
-				
-				// sets the permissions so the folder can be deleted manually.
-				// chmod($path, 0777);
 			}
 
 			// move to the next folder and build the next path.
 			$folder = next($folders);
 			$path .= "/{$folder}";
 		}
-    }
-    
-    protected function sampleGetImage($id)
-    {
-        $path = "{$this->imagesFolder}/{$id}.*";
-        $images = glob($path);
-
-        if (count($images) == 0) return 'default.png';
-        else return $images[0];
     }
 
     protected function uploadImage($id)

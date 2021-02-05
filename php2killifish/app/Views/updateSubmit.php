@@ -50,13 +50,6 @@
 
     <?php else: ?>
 
-    <!-- <div class="col-12 alert alert-danger text-center mb-auto content">
-        <div>
-            <h1>Access denied</h1>
-            <p>Directory access is forbidden.</p>
-        </div>
-    </div> -->
-
     <?php throw new \CodeIgniter\Router\Exceptions\RedirectException('updates'); ?>
     <!-- throws CI exception to automatically redirect to update page, should user accessing through directory/URL not have admin privileges or is not logged in -->
 

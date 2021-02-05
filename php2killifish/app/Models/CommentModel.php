@@ -14,11 +14,7 @@ class CommentModel extends Model{
 
 
     # What kind of data a query will return.
-    protected $returnType       = 'array';
-
-    // # This makes sure the controller will never delete a field.
-    // protected $useSoftDeletes   = true;
-    
+    protected $returnType       = 'array';    
 
     # These are the fields/columns that can be edited by the user when creating a comment.
     # Anything else will be taken care of by CodeIgniter.

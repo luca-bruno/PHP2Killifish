@@ -132,7 +132,7 @@ class UserController extends BaseController{
 				mkdir($path);
 				
 				// sets the permissions so the folder can be deleted manually.
-				// chmod($path, 0777);
+				chmod($path, 0777);
 			}
 
 			// move to the next folder and build the next path.

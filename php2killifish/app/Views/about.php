@@ -25,7 +25,7 @@
             <div class="container boxBorder">
                 <h2 class="text-center">Contact Us</h2>
                 <p> <i class="material-icons">email</i> <strong>Email</strong>: info@naturetrustmalta.org</p>
-                <p> <i class="material-icons">stay_current_portrait</i><strong>Phone</strong>: +356 2131 3150</p>
+                <p> <i class="material-icons">stay_current_portrait</i><strong>Phone</strong>: +356 9999 9999</p>
                 <p> <i class="material-icons">settings_phone</i><strong>Telephone</strong>: +356 2131 3150</p>
             </div>
         </div>

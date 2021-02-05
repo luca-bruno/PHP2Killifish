@@ -1,4 +1,4 @@
-<div class="">
+<div>
     <div class="container">
         <div class="mt-5 pt-1 pb-1">
             <?php if (session()->get('userIsAdmin')): ?>
@@ -32,8 +32,8 @@
                     </div>
                 </div>
                 <?php else: ?>
-                    <h3>No News</h3>
-                    <p>Unable to find any news for you.</p>
+                    <h3>No Updates</h3>
+                    <p>Unable to find any updates.</p>
             <?php endif; ?>
 
         <br>
@@ -60,13 +60,10 @@
                             <div class="text-right">
                                 <a class="expandMenuButton pr-3" href="updateDisplay/<?= esc($news_item['newsSlug'], 'url'); ?>">Read More</a>
                             </div>
-                            <!-- <p> <a href="/ci-news/public/news/view/">View Article</a></p> -->
                         </div>
                     </div>
                 <?php endforeach; ?>
                 <?php else: ?>
-                    <h3>No News</h3>
-                    <p>Unable to find any news for you.</p>
             <?php endif; ?>
         </div>
         <br>

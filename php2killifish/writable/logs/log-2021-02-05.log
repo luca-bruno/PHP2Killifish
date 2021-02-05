@@ -1,0 +1,75 @@
+CRITICAL - 2021-02-05 06:08:04 --> unlink(E:\xampp\htdocs\php2killifish\php2killifish\writable\debugbar/debugbar_1612106082.json): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(E:\\xampp...', 'E:\\xampp\\htdocs...', 106, Array)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\Debug\Toolbar\Collectors\History.php(106): unlink('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\Debug\Toolbar.php(483): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles(1612526882, 20)
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#4 E:\xampp\htdocs\php2killifish\php2killifish\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#5 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#6 E:\xampp\htdocs\php2killifish\php2killifish\system\Events\Events.php(188): call_user_func(Object(Closure))
+#7 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#8 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-05 06:10:21 --> syntax error, unexpected '}', expecting end of file
+#0 E:\xampp\htdocs\php2killifish\php2killifish\system\Common.php(1119): CodeIgniter\View\View->render('postDisplay', Array, true)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\PostController.php(45): view('postDisplay', Array)
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\PostController->view('blalalallalalal...')
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#4 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-02-05 06:19:44 --> Undefined index: postTitle
+#0 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\PostController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'E:\\xampp\\htdocs...', 41, Array)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\PostController->view('killi')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-02-05 06:19:50 --> Undefined index: postTitle
+#0 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\PostController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'E:\\xampp\\htdocs...', 41, Array)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\PostController->view('killi')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-02-05 06:19:51 --> Undefined index: postTitle
+#0 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\PostController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'E:\\xampp\\htdocs...', 41, Array)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\PostController->view('killi')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-02-05 06:20:41 --> Undefined index: postTitle
+#0 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\PostController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'E:\\xampp\\htdocs...', 41, Array)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\PostController->view('killi')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-02-05 06:21:22 --> Undefined index: postTitle
+#0 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\PostController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'E:\\xampp\\htdocs...', 41, Array)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\PostController->view('killi')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-02-05 06:21:28 --> Undefined index: postTitle
+#0 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\PostController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'E:\\xampp\\htdocs...', 41, Array)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\PostController->view('killi')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-02-05 06:21:50 --> Undefined index: postTitle
+#0 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\PostController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'E:\\xampp\\htdocs...', 41, Array)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\PostController->view('killi')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-02-05 06:21:55 --> Undefined index: postTitle
+#0 E:\xampp\htdocs\php2killifish\php2killifish\app\Controllers\PostController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'E:\\xampp\\htdocs...', 41, Array)
+#1 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(918): App\Controllers\PostController->view('killi')
+#2 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#3 E:\xampp\htdocs\php2killifish\php2killifish\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\xampp\htdocs\php2killifish\php2killifish\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
