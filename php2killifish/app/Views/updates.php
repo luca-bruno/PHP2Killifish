@@ -1,5 +1,4 @@
-<div>
-    <div class="container">
+    <div class="container content">
         <div class="mt-5 pt-1 pb-1">
             <?php if (session()->get('userIsAdmin')): ?>
                 <div class="middleButton boxBorderPost createPost pt-3">
@@ -32,8 +31,8 @@
                     </div>
                 </div>
                 <?php else: ?>
-                    <h3>No Updates</h3>
-                    <p>Unable to find any updates.</p>
+                    <h3 style="color: #C1f6ED">No Updates</h3>
+                    <p style="color: #C1f6ED">Unable to find any updates.</p>
             <?php endif; ?>
 
         <br>
@@ -68,4 +67,3 @@
         </div>
         <br>
     </div>
-</div>
