@@ -44,9 +44,10 @@ class UpdateModel extends Model{
             return $this->findAll();
         }
 
+        // foreign key link between newsAuthor and userID
         return $this->select('news.*, users.userFirstName, users.userLastName, users.userScreenName')
                     ->asArray()
-                    ->where('newsSlug', $newsSlug) //error is returning first record without a newsSlug
+                    ->where('newsSlug', $newsSlug)
                     ->join('users', 'users.userID = news.newsAuthor', 'left')
                     ->first();
     }

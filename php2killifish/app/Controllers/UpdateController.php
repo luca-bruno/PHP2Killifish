@@ -7,12 +7,11 @@ class UpdateController extends BaseController{
     
     protected $imagesFolder = 'uploads/updates';
 
-    public function index(){ //update page
+    public function index(){ // update page
 
-        # Create an instance of the news model.
+        // creates an instance of the news model
         $model = new UpdateModel();
         
-        // $data['title'] = 'News Archive';
         $data['news'] = $model->getNews();
 
         echo view('templates/header', $data);
@@ -21,14 +20,14 @@ class UpdateController extends BaseController{
 
     }
 
-    function view($newsSlug = NULL){
+    function view($newsSlug = NULL){ // different updates may be viewed according to their slug, used as their URL extension
 
         $model = new UpdateModel();
         helper(['form']);
 
-        $data['news'] = $model->getNews($newsSlug);
+        $data['news'] = $model->getNews($newsSlug); // all updates with matching news slug
         
-        if (empty($data['news'])){
+        if (empty($data['news'])){ // if no updates match news slug
 
             throw new \CodeIgniter\Exceptions\PageNotFoundException('Cannot find the news item: ' . $newsSlug);
         
@@ -65,7 +64,7 @@ class UpdateController extends BaseController{
                     'newsSlug' => url_title($this->request->getPost('newsTitle'))
                 ];  //send our data to model
                 $model->save($newData); //save it
-                $id = $model->getInsertID();// insert id of the last update.
+                $id = $model->getInsertID();// insert id of the last update
                 $this->uploadImage($id);
                 $session = session(); //create session
                 $session->setFlashdata('success', 'Update successfully added'); //displays success dialog as flashdata (session data that will only be available for the next request)
@@ -80,29 +79,29 @@ class UpdateController extends BaseController{
 
 
     /**
-	 * Checks that a folder exists in the path, and will create one if not.
+	 * Checks that a folder exists in the path, and will create one if not
 	 */
 	protected function checkFolder($path)
 	{
-		// Split the path into folders.
+		// Split the path into folders
 		$folders = explode('/', $path);
 
-		// Set the first folder for use.
+		// Set the first folder for use
 		$folder = reset($folders);
 
-		// Clear the path so it can be built one step at a time.
+		// Clear the path so it can be built one step at a time
 		$path = $folder;
 
 		while ($folder != null)
 		{
-			// skip the loop if the folder is already there.
+			// skip the loop if the folder is already there
 			if (!file_exists($path) || !is_dir($path))
 			{
-				// create the folder.
+				// create the folder
 				mkdir($path);
 			}
 
-			// move to the next folder and build the next path.
+			// move to the next folder and build the next path
 			$folder = next($folders);
 			$path .= "/{$folder}";
 		}
@@ -114,21 +113,21 @@ class UpdateController extends BaseController{
 
         if ($image->getName() != '')
         {
-            // Generate a new name for this file.
+            // Generate a new name for this file
             $newName = "{$id}.{$image->getClientExtension()}";
 
-            // Make sure the folder exists.
+            // Make sure the folder exists
             $this->checkFolder($this->imagesFolder);
 
-            // Delete other images with the same ID.
+            // Delete other images with the same ID
             $path = "{$this->imagesFolder}/{$id}.*";
             $images = glob($path);
 
-            // Loop through all the items and delete the file(s).
+            // Loop through all the items and delete the file(s)
             foreach ($images as $file)
                 unlink($file);
 
-            // Move the image to the new folder using a new name.
+            // Move the image to the new folder using a new name
             $image->move($this->imagesFolder, $newName);
         }
     }

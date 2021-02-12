@@ -6,6 +6,7 @@
         <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 pt-3 pb-3">
             
             <div class="row mb-3 boxBorder">
+                <!-- back button -->
                 <a class="expandMenuButton" href="community">Back</a>
                 <br> 
                 <div class="container">
@@ -13,6 +14,7 @@
                     <h3 class="text-center">Post Form</h3>
                     <hr>
                 </div>
+                <!-- new post submission form -->
                 <form class="w-100" action="postSubmit" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <label class="center" for="postTitle">Title</label>
@@ -30,6 +32,8 @@
                             <input type="file" class="custom-file-input" name="image" id="image">
                     </div>
 
+                    <!-- if validation fails, CI method listErrors() echoes validation faults  -->
+                    
                     <?php if (isset($validation)): ?>
                             <div class="col-12">
                                 <div class="alert alert-danger">

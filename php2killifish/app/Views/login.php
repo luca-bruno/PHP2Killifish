@@ -1,4 +1,4 @@
-<div class="container content ">
+<div class="container content">
     <div class="row mb-5"> 
         <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 mt-5 pt-3 pb-3">
             <div class="container boxBorder">
@@ -10,6 +10,7 @@
                         <?= session()->get('success') ?>
                     </div>
                 <?php endif; ?>
+                <!-- login form -->
                 <form class="" action="login" method="post">
                     <div class="form-group">
                         <label for="userScreenName">Username</label>
@@ -19,6 +20,8 @@
                         <label for="userPassword">Password</label>
                         <input type="password" class="form-control" name="userPassword" id="userPassword" value="">
                     </div>
+                    
+                    <!-- if validation has been submitted (post-login attempt) -->
                     <?php if (isset($validation)): ?>
                             <div class="col-12">
                                 <div class="alert alert-danger" >
@@ -26,6 +29,7 @@
                                 </div>
                             </div>
                         <?php endif; ?>
+                    
                     <div class="row">
                         <div class="col-12 col-sm-4">
                             <button type="submit" class="btn btn-info">Login</button>

@@ -2,11 +2,12 @@
     <!-- Post -->
     <div class="container content">
         <div class="col-12 col-sm-8 offset-sm-2 col-md-8 mt-5 pt-3 pb-3">
-
+            <!-- back button -->
             <a class="expandMenuButton p-3" href="<?= base_url('/community'); ?>">Back</a>   
             
             <div class="boxBorderPost">
                 <?php
+                // display image attached to post
                 // match filename of image path to postID
                     $id = esc($posts['postID']);
                     foreach(glob("uploads/posts/{$id}.*", GLOB_NOSORT) as $image)  {
@@ -25,6 +26,7 @@
                         
                         $image_defaultpath = base_url('') . '/' . 'uploads/avatars/default.png'; 
                         $image_path = NULL;
+                        // displaying avatar images for authors
                         foreach(glob("uploads/avatars/{$id}.*", GLOB_NOSORT) as $image)  {
                             $image_path = base_url('') . '/' . $image; 
                         }
@@ -34,8 +36,12 @@
                                 echo '<img class="avatar ml-3 mr-2" src="' . $image_defaultpath . '">';
                             }
                     ?> 
+                        <!-- post author -->
                         <strong><?= esc($posts['userScreenName']); ?></strong>
                     </div>
+
+                    <!-- Like/dislike/rating feature planned, never implemented -->
+
                     <!-- <div class="col-12 col-sm-8 text-right">
                         <button type="submit" > <i  class="material-icons">thumb_up</i></button>
                         <button type="submit" > <i  class="material-icons">thumb_down</i></button>
@@ -45,8 +51,9 @@
             
             
             <div class="boxBorder" >
-                <!--  New comment input -->
-                <?php if (isset($_SESSION['userScreenName'])): ?>
+                <!-- New comment input -->
+                <!-- displays only if session contains logged in user -->
+                <?php if (isset($_SESSION['userScreenName'])): ?> 
                 <div class="row">
                     <form class="w-100" action="<?= base_url('/postDisplay') ?>" method="post">
                         <div class="col-12">
@@ -56,6 +63,7 @@
                                 <textarea type="text" class="form-control" name="commentDescription" id="commentDescription" ></textarea>
                                 <input type="hidden" name="parent-post-id" value="<?= esc($posts['postID']); ?>">
                             </div>
+                            
                             <!-- if validation fails, CI method listErrors() echoes validation faults  -->
                         
                             <?php if (isset($validation)): ?>
@@ -77,7 +85,7 @@
                 <hr>
                 <!-- Previously posted comments -->
                 <?php if (!empty($comments) && is_array($comments)): ?>
-                    <?php foreach (($comments) as $comment_item): ?>
+                    <?php foreach (($comments) as $comment_item): ?> <!-- display posts in ascending order (oldest to most recent) -->
                         <?php if ($comment_item['commentParent'] == $posts['postID']): ?>
                             <div class="row">
                                 <div class="col-12 col-sm-8">
@@ -86,6 +94,7 @@
 
                                         $image_defaultpath = base_url('') . '/' . 'uploads/avatars/default.png'; 
                                         $image_path = NULL;
+                                        // displaying avatar images for commenting users
                                         foreach(glob("uploads/avatars/{$id}.*", GLOB_NOSORT) as $image)  {
                                             $image_path = base_url('') . '/' . $image; 
                                         }
@@ -95,7 +104,7 @@
                                                 echo '<img class="avatar ml-3 mr-2" src="' . $image_defaultpath . '">';
                                             }
                                     ?> 
-                                
+                                    <!-- comment author -->
                                     <strong> <?= esc($comment_item['userScreenName']); ?> </strong>
                                     <p class="ml-3 mt-3"><?= esc($comment_item['commentDescription']); ?></p>
                                     <br>

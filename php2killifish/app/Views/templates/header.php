@@ -9,17 +9,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"> <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <title>Endemic</title>
-    <!-- change title as game title is decided upon -->
 </head>
 <body style="background-image: url(<?php echo base_url('assets/resources/MainMenu.png'); ?>); background-size: cover; background-attachment: fixed;">
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="<?= base_url('/home'); ?>">Endemic</a> <!-- change title as game title is decided upon -->
+            <a class="navbar-brand" href="<?= base_url('/home'); ?>">Endemic</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- navigation bar -->
+            <!-- Navigation bar -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto">
                 <li class="nav-item active">
@@ -44,13 +43,14 @@
             <div>
                 <ul class="navbar-nav d-flex flex-row ml-auto">
 
+                <!-- Avatar for account in navbar, planned but never implemented -->
+
                 <!-- <li class="nav-item active ml-lg-3 mr-lg-0 mr-3">
                     <a class="nav-link" href="#" >
                     <i class="material-icons md-light">account_circle</i></a>
                 </li> -->
 
-                <!-- avatar to be added later, placeholder for now ^^ -->
-
+                <!-- if user is logged into current session -->
                 <?php if (session()->get('isLoggedIn')): ?>
                     <li class="nav-item active disabled">
                     <!-- disabled retains look of nav-link, but removes btn functionality -->

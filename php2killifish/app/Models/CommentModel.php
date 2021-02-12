@@ -40,15 +40,17 @@ class CommentModel extends Model{
     function getComments()
     {
         $builder = $this->db->table('comments');
-
+        
+        // foreign key link between commentAuthor and userID
         $builder->select('comments.*, users.userScreenName')
                     ->join('users', 'comments.commentAuthor = users.userID', 'left');
         
+        // foreign key link between parent post of comment and postID
         $builder->select('comments.*')
                     ->join('posts', 'comments.commentParent = posts.postID', 'left');
 
-        $result = $builder->get()->getResultArray();
-        return count($result) == 1 ? $result[0] : $result;
+        $result = $builder->get()->getResultArray(); // returns query result as pure array, or empty array if no result found
+        return count($result) == 1 ? $result[0] : $result; // if count in array is 1 (i.e. found result), return first element in array (found result), else return empty array
     }
     
 }

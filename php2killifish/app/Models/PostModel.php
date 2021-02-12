@@ -41,17 +41,18 @@ class PostModel extends Model{
     function getPosts($postSlug = false)
     {
         $builder = $this->db->table('posts');
-
+        
+        // foreign key link between postAuthor and userID
         $builder->select('posts.*, users.userScreenName')
                     ->join('users', 'posts.postAuthor = users.userID', 'left');
 
         if ($postSlug !== false)
         {
-            $builder->where('postSlug', $postSlug); //error is returning first record without a slug
+            $builder->where('postSlug', $postSlug); // searches for records matching post slug value
         }
 
-        $result = $builder->get()->getResultArray();
-        return count($result) == 1 ? $result[0] : $result;
+        $result = $builder->get()->getResultArray(); // returns query result as pure array, or empty array if no result found
+        return count($result) == 1 ? $result[0] : $result; // if count in array is 1 (i.e. found result), return first element in array (found result), else return empty array
     }
     
 }

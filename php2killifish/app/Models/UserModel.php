@@ -41,21 +41,20 @@ class UserModel extends Model{
     protected $beforeUpdate = ['beforeUpdate'];
 
     
-    protected function passwordHash(array $data){ //password PHP hashing check and function
+    protected function passwordHash(array $data){ // PHP password hashing check and function
         if(isset($data['data']['userPassword']))
             $data['data']['userPassword'] = password_hash($data['data']['userPassword'], PASSWORD_DEFAULT);
     
         return $data;
     }
 
-    protected function beforeInsert(array $data){ //runs before inserting to db
-        $data = $this->passwordHash($data); //chained the hashing function check
+    protected function beforeInsert(array $data){ // runs before inserting to db
+        $data = $this->passwordHash($data); // chained the hashing function check
         return $data;
     }
     
-    protected function beforeUpdate(array $data){ //runs before updating db
-        $data = $this->passwordHash($data); //chained the hashing function check
+    protected function beforeUpdate(array $data){ // runs before updating db
+        $data = $this->passwordHash($data); // chained the hashing function check
         return $data;
     }
-    
 }

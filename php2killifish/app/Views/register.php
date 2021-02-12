@@ -4,13 +4,14 @@
             <div class="container boxBorder">
                 <h3>Register</h3>
                 <hr>
+                <!-- register form -->
                 <form class="" action="register" method="post" enctype="multipart/form-data">
                     <div class="row">
                         <div class="col-12 col-sm-6">
                             <div class="form-group">
                                 <label for="userFirstName">First Name</label>
                                 <input type="text" class="form-control" name="userFirstName" id="userFirstName" value="<?= set_value('userFirstName') ?>"> 
-                                <!-- set_value() to retain inputted data in case of failed register validation -->
+                                <!-- set_value() to retain inputted data in field, in case of failed register validation -->
                             </div>
                         </div>
                         <div class="col-12 col-sm-6">
@@ -55,7 +56,8 @@
                                 <input type="password" class="form-control" name="userPassword_confirm" id="userPassword_confirm" value="">
                             </div>
                         </div>
-                        <!-- if validation fails, CI method listErrors() echoes validation faults  -->
+                        
+                        <!-- if validation has been submitted (post-register attempt), CI method listErrors() echoes validation faults  -->
                         <?php if (isset($validation)): ?>
                             <div class="col-12">
                                 <div class="alert alert-danger">

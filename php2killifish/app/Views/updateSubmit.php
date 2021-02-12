@@ -1,11 +1,11 @@
     <!-- deny access if user is not admin, making it inaccessible through URL -->
     
     <?php if (session()->get('userIsAdmin')): ?>
-        
 
         <div class="container mt-3 content">
             <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 pt-3 pb-3">
                 <div class="row mb-3 boxBorder">
+                    <!-- back button -->
                     <a class="expandMenuButton" href="updates">Back</a>
                     <br> 
                     <div class="container">
@@ -13,6 +13,7 @@
                         <h3 class="text-center">Post Form</h3>
                         <hr>
                     </div>
+                    <!-- new update post submission form -->
                     <form class="w-100" action="updateSubmit" method="post" enctype="multipart/form-data">
                         <div class="form-group">
                             <label for="newsTitle">Title</label>
@@ -30,7 +31,8 @@
                                     <input type="file" class="custom-file-input" name="image" id="image">
                                 </div>
                             
-                        </div>                    
+                        </div>           
+                        
                         <!-- if validation fails, CI method listErrors() echoes validation faults  -->
                         
                         <?php if (isset($validation)): ?>
